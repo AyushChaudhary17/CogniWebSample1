@@ -1,0 +1,1577 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    /* scroll-behavior: smooth; */
+}
+
+/* .................. UTILITY CLASSES ..................... */
+
+.container{
+    max-width: 1300px;
+    width: 90%;
+    margin: auto;
+    /* border: 2px solid green; */
+}
+
+.heading1{
+    font-size: 3rem;
+}
+.heading2{
+    font-size: 2.5rem;
+}
+.heading3{
+    font-size: 2rem;
+}
+.heading4{
+    font-size: 1.8rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.btn1{
+    /* height: 100%; */
+    width: 18%;
+    border: 1.5px solid black;
+    background-color: white;
+    /* color: black; */
+    border-radius: 50px;
+    /* padding: 1rem; */
+}
+
+
+
+/* ........................ Header Styling ......................... */
+/*  */
+
+.header{
+    /* border: 2px solid red; */
+    display: none;
+    position: fixed;
+    z-index: 100000;
+    /* height: 10vh; */
+    background-color: white;
+    width: 100%;
+    padding: 20px 0 20px 0;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+
+}
+
+/* Sticky classs .......... */
+header.sticky{
+    /* background-color: red; */
+    padding: 5px 0 5px 0;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.header .navbar{
+    height: 80%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    /* position: fixed; */
+}
+
+.header .navbar .logodiv{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    height: 50px;
+}
+
+.navbar .logodiv .logoimg{
+    /* border: 2px solid red; */
+    width: 15%;
+
+}
+
+.navbar .logodiv .logoimg img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.navbar .logodiv .logotitle{
+    /* border:  2px solid green; */
+    width: 85%;
+    text-align: center;
+    padding: 0.5rem;
+}
+.logodiv .logotitle .heading2{
+    font-weight: 200;
+}
+
+
+.header .navbar .navlistdiv{
+    /* border:  2px solid yellow; */
+    width: 50%;
+    height: 50%;
+    margin: auto 0;
+}
+
+/* ..............Navbar list Styling ............... */
+
+.navlistdiv .navlist{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navlist .listitems .heading4{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* ..................... Header Styling.................... */
+/* .header{
+    border: 2px solid red;
+    height: 10vh;
+    
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+} */
+
+/* ............... Main Head Styling .................. */
+
+.main{
+    /* border: 2px solid red; */
+    /* height: 90vh; */
+    /* margin: 5rem 0 5rem 0; */
+    /* margin-top: 2rem; */
+    position: relative;
+    padding: 5rem 0 5rem 0;
+
+}
+.main .mainContent{
+    /* border: 2px solid green; */
+    height: 400px;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    display: flex;
+    justify-content: space-between;
+}
+.mainContent .ContentText{
+    /* border: 2px solid red; */
+    height: 90%;
+    width: 55%;
+    margin-top: 2rem;
+
+}
+
+.mainContent .ContentText .mainHeading p{
+    /* border: 2px solid red; */
+    /* height: 40%; */
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 4.5rem;
+}
+.mainContent .ContentText .subHeading{
+    margin-top: 0.5rem;
+}
+
+
+.mainContent .ContentText .subHeading p{
+    /* border: 2px solid green; */
+    /* height: 20%; */
+    font-size: 2rem;
+    font-weight: 200;
+
+
+}
+
+.mainContent .ContentText .textButton{
+    /* border:  2px solid yellow; */
+    height: 15%;
+    margin-top: 4rem;
+
+}
+.ContentText .textButton .btn1{
+    height: 100%;
+    width: 18%;
+    /* border: 1px solid black; */
+    /* color: black; */
+    border-radius: 50px;
+    /* padding: 1rem; */
+}
+.ContentText .textButton .btn1 a{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.mainContent .ContentImage{
+    /* border: 2px solid green; */
+    height: 100%;
+    width: 40%;
+
+}
+
+.mainContent .ContentImage img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+}
+
+
+/* ............... Partner Div styling ............ */
+.main .partnersdiv{
+    /* border: 2px solid green; */
+    height: 100px;
+    width: 100%;
+    /* position: absolute; */
+    /* bottom: 10%; */
+    /* background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); */
+    /* background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%); */
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+
+/* .................... About Styling ................... */
+.about{
+    /* border:  2px solid red; */
+    /* height: 60vh; */
+    padding: 8rem 0;
+
+
+}
+
+.about .heading1{
+    /* border:  2px solid green; */
+    /* margin-top: 2rem; */
+    text-align: center;
+    font-weight: 500;
+    font-size: 3.2rem;
+}
+.about .aboutContent{
+    /* border:  2px solid green; */
+    height: 80%;
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+.aboutContent .leftContent{
+    /* border:  2px solid yellow; */
+    height: 100%;
+    padding: 1rem;
+    width: 50%;
+}
+.aboutContent .rightContent{
+    /* border:  2px solid yellow; */
+    height:  100%;
+    padding: 1rem;
+    width: 50%;
+}
+
+.aboutContent .leftContent p,
+.aboutContent .rightContent p{
+    font-size: 1.5rem;
+}
+
+.rightContent .btn1{
+    padding: 1rem;
+    margin-top: 3rem;
+    letter-spacing: 1px;
+
+    font-weight: 100;
+}
+
+/*  ...................... Services Styling ........................ */
+
+.services{
+    /* border:  2px solid red; */
+    /* height: 80vh; */
+    margin-top: 8rem;
+    padding: 8rem 0;
+    
+
+}
+.services .serviceHeading{
+    /* border: 2px solid green; */
+    margin-top: 2rem;
+    text-align: center;
+}
+.serviceHeading .heading1{
+    /* font-size: 3.2rem; */
+    text-align: center;
+    font-weight: 500;
+    font-size: 3.2rem;
+
+}
+.serviceHeading p{
+    font-size: 1.5rem;
+}
+
+.services .servicesContainer{
+    /* border:  2px solid yellow; */
+    /* height: 450px; */
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: row;
+    /* column-gap: ; */
+    /* grid-template-columns: repeat(auto-fit, 1fr); */
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.servicesContainer .serviceBox{
+    height: 450px;
+    /* float: left; */
+    flex-basis: 23%;
+    /* border: 2px solid green; */
+    padding: 2rem;
+    /* margin: 0 20px 0 0; */
+    /* position: relative; */
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    border-radius: 5px;
+    /* box-shadow:  5px  10px gray; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+/* .servicesContainer::after{
+    display: block;
+    content: "";
+    clear: both;
+} */
+
+.serviceBox:hover{
+    background-color: black;
+    color: white;
+}
+
+/* .serviceBox::after{
+    content: "";
+    display: block;
+    border: 2px solid red;
+    background-color: rgba(19, 18, 18, 0.263);
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* z-index: 4; */
+/* } */
+
+/* .......servicesBox styling........... */
+.serviceBox .heading3{
+    text-align: left;
+    font-weight: 500;
+    /* z-index: 5; */
+    /* color: white; */
+}
+
+.serviceBox .serviceImage{
+    width: 100%;
+    height: 25%;
+    /* border:  2px solid green; */
+    margin: 1rem 0;
+    border-radius: 5px;
+    /* z-index: 5; */
+    cursor: pointer;
+}
+
+.serviceBox .serviceImage img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    object-fit: cover;
+    /* z-index: 5; */
+}
+
+.serviceBox:hover .serviceImage img{
+    border: 2px solid white;
+}
+.serviceBox p{
+    font-size: 1rem;
+    line-height: 2.5rem;
+}
+
+/*  ................. Internship Styling ....................... */
+.internship{
+    /* border:  2px solid red; */
+    margin-top: 8rem;
+    padding: 8rem 0;
+
+    /* height: 80vh; */
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+
+}
+.internship .internshipHeading{
+    /* border: 2px solid green; */
+    margin-top: 2rem;
+    text-align: center;   
+}
+.internship .internshipHeading .heading1{
+    /* font-size: 3.2rem; */
+    text-align: center;
+    font-weight: 500;
+    font-size: 3.2rem;
+   
+}
+
+.internshipHeading p{
+    font-size: 1.5rem;   
+}
+.internship .internshipContainer{
+    border:  2px solid rebeccapurple;
+    /* padding: 1rem; */
+    /* height: 450px; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    /* column-gap: ; */
+    /* grid-template-columns: repeat(auto-fit, 23%); */
+    /* gap: 2%; */
+    /* grid-auto-flow: row; */
+    padding-bottom: 4rem;
+    
+
+
+    justify-content: space-between;   
+}
+
+.internshipContainer .internshipBox{
+    /* height: 450px; */
+    flex-basis: 23%;
+    padding: 2rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    border: 2px solid yellow;
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    background-color: white;
+}
+
+/* .internshipBox .internshipIcon{
+    border: 2px solid green;
+    height: 12%;
+    width: 18%;
+    border-radius: 50%;
+    text-align: center;
+    padding: 0.5rem;
+
+} */
+.internshipBox .heading3{
+    text-align: left;
+    font-weight: 500;
+    margin-top: 1rem;
+    /* z-index: 5; */
+}
+.internshipBox p{
+    font-size: 1rem;
+    margin: 2rem 0 1rem 0;
+    line-height: 2.5rem;
+}
+
+
+.internshipBox i{
+    font-size: 3.5rem;
+    /* border: 2px solid red; */
+    padding: 1.5rem;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+}
+
+.internshipBox:hover i,
+.internshipBox:hover .btn1{
+    background-color: white;
+    color: black;
+}
+.internshipBox:hover .btn1 a{
+    color: black;
+}
+.internshipBox:hover{
+    color: white;
+    background: black;
+}
+.internshipBox .btn1{
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    width: 22%;
+    background-color: black;
+    /* color: white; */
+}
+.internshipBox .btn1 a{
+    color: white;
+}
+
+/* ................. Features Styling .................. */
+
+.features{
+    /* border:  2px solid red; */
+    margin-top: 8rem;
+    /* height: 80vh; */
+    padding-bottom: 2rem;
+    padding: 8rem 0;
+    /* background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%); */
+    /* background-image: linear-gradient(to top, #dfe9f3 0%, white 100%); */
+
+}
+
+.features .featuresHeadingContainer{
+    text-align: center;
+    margin-top: 2rem;
+
+}
+
+.features .featuresHeadingContainer .heading1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 3.2rem;
+
+}
+
+.features .featuresHeadingContainer p{
+    font-size: 1.5rem;   
+}
+
+.features .featuresContainer{
+    /* border: 2px solid green; */
+    /* height: 250px; */
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    /* grid-template-columns: repeat(auto-fit, 23.5%); */
+    /* gap: 4% 2%; */
+    flex-wrap: wrap;
+
+}
+
+.features .featuresContainer .featureBox{
+ /* border: 2px solid red;    */
+ /* margin: 1px 0; */
+ /* height: 75px; */
+ padding: 1rem;
+ /* flex-basis: 23%; */
+ background-color: gainsboro;
+}
+/* .featureBox .featureContent{
+    border: 2px solid green;
+} */
+
+.featuresContainer .featureBox i{
+    font-size: 4rem;
+}
+.featuresContainer .featureBox .heading3{
+    /* display:  */
+    width: 80%;
+    float: right;
+    /* border: 2px solid yellow; */
+    /* margin-left: 1rem; */
+    margin-top: 0.5rem;
+}
+
+/* ............ Testimonial Styling ................ */
+
+.testimonial{
+    /* border:  2px solid red; */
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    padding: 8rem 0;
+    height: 80vh;
+
+}
+
+.testimonial .testimonialHeading{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.testimonial .testimonialHeading .heading1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 3.2rem;
+}
+.testimonialHeading p{
+    font-size: 1.5rem;
+}
+.scrollWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 10% auto; */
+    /* border: 2px solid red; */
+    position: relative;
+}
+
+.scrollWrap .testimonialContainer{
+    /* border: 2px solid red; */
+    height: 400px;
+    margin-top: 2rem;
+}
+
+.scrollWrap img{
+    width: 50px;
+    height: 50px;
+    margin: 40px;
+    cursor: pointer;
+    /* border: 2px solid red; */
+}
+.scrollWrap .rightButton{
+    transform: rotate(180deg);
+    position: absolute;
+    right: 0;
+}
+.scrollWrap .leftButton{
+    position: absolute;
+    left: 0;
+}
+
+.scrollWrap .testimonialContainer .scrollsection{
+    /* border: 2px solid yellow; */
+    height: 80%;
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    justify-content: space-between;
+    /* display: grid;
+    grid-template-columns: auto auto; */
+}
+
+.scrollsection::-webkit-scrollbar{
+    display: none;
+}
+.scrollsection .scrollBox{
+    /* border:  2px solid green; */
+    height: 100%;
+    display: grid;
+    width: 100%;
+    /* gap: 5%; */
+    grid-template-columns: auto auto;
+    flex: none;
+}
+
+.testimonialContainer .scrollsection .scrollBox .testimonialBox{
+    /* border: 2px solid black; */
+    height: 100%;
+    padding: 2rem;
+    min-width:  612px;
+    position: relative;
+}
+
+.textBox{
+    width: 90%;
+    height: 100%;
+    /* border: 2px solid red; */
+    float: right;
+    padding: 3rem 6rem 3rem 6rem;
+    /* position: relative; */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+/* .textBox .textAbout{
+    /* border: 2px solid yellow; */
+
+.textBox .textAbout .heading3{
+    font-weight: 500;
+}
+
+.textBox .textAbout p{
+    font-size: 1.5rem;
+    /* display: inline; */
+}
+
+.textBox .textMessage{
+    margin-top: 1rem;
+    /* border: 2px solid yellow; */
+    font-size: 1.5rem;
+}
+.textMessage p span{
+    font-size: 3rem;
+    /* margin:; */
+    /* border: 2px solid red; */
+    /* line-height: 1rem; */
+}
+.textMessage p .fa-quote-left{
+    margin: 0 2rem 0 0;
+}
+.textMessage p .fa-quote-right{
+    margin: 2rem 0 0 2rem;
+}
+
+/* image box  */
+.testimonialBox .imageBox{
+    width: 80px;
+    height: 80px;
+    /* border: 2px solid green; */
+    position: absolute;
+    top:3%;
+    left: 0%;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+.testimonialBox .imageBox img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ............... Team Styling ........................... */
+
+.team{
+    /* border:  2px solid red; */
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    padding: 8rem 0;
+
+    /* height: 80vh; */
+    /* background-image: linear-gradient(to top, #dfe9f3 0%, white 100%); */
+
+}
+
+.team .teamHeading{
+    margin-top: 2rem;
+    text-align: center;
+}
+.team .teamHeading .heading1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 3.2rem;
+}
+
+.team .teamHeading p{
+    font-size: 1.5rem;
+}
+
+.team .teamMemberContainer{
+    /* border: 2px solid red; */
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(auto-fit, 23.5%); */
+    justify-content: space-between;
+    /* column-gap: 2%; */
+}
+
+.team .teamMemberContainer .teamMembers .memberPicture{
+    /* border: 2px solid red; */
+    height: 80%;
+    position: relative;
+}
+
+.memberPicture img{
+    width:  100%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.team .teamMemberContainer .teamMembers .memberPosition{
+    /* border: 2px solid yellow; */
+    height: 20%;
+    background: white;
+}
+
+.team .teamMemberContainer .teamMembers{
+    /* border: 2px solid green; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    /* height: 400px; */
+    flex-basis: 23%;
+    margin: 1rem 0;
+
+}
+
+.teamMembers .memberPicture .memberOverlay{
+    /* border:  2px solid red; */
+    height: 15%;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: -10%;
+    display: none;
+    background: white;
+    opacity: 0.8;
+    transition: all;
+    transition-duration: 1s;
+    transition-timing-function:ease-in;
+
+    
+}
+
+/* ......... overlay hover .......... */
+.teamMembers .memberPicture:hover .memberOverlay{
+    display: block;
+    bottom: 0%;
+
+}
+
+.memberOverlay .overlayLinks{
+    display: flex;
+    /* border: 2px solid yellow; */
+    width: 70%;
+    justify-content: space-around;
+    margin: 1rem auto;
+
+}
+
+.teamMembers .memberPicture .memberOverlay .overlayLinks a i{
+    color: black;
+    font-size: 2rem;
+    /* margin: ; */
+}
+
+.teamMembers .memberPosition .positionInfo{
+    /* border: 2px solid green; */
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.memberPosition .positionInfo .heading3{
+    /* text-align: left; */
+    font-weight: 500;
+    /* margin-top: 1rem; */
+}
+.memberPosition .positionInfo p{
+    font-size: 1.5rem;
+}
+
+/* ................... Contact Styling ........................ */
+
+
+
+.contact{
+    /* border:  2px solid red; */
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    padding: 4rem 0;
+
+    /* height: 90vh; */
+    /* background-image: linear-gradient(to top, #dfe9f3 0%, white 100%); */
+
+}
+
+.contact .contactHeading{
+    /* margin-top: 2rem; */
+    text-align: center;
+}
+.contact .contactHeading .heading1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 3.2rem;
+}
+
+.contact .contactBox{
+    /* border: 2px solid green; */
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.contact .contactBox .leftdiv{
+    /* border: 2px solid red; */
+    /* height: 100%; */
+    height: 400px;
+
+    /* width: 30%; */
+    flex-basis: 30%;
+    margin: 1rem 0;
+}
+
+.contactBox .leftdiv .contactLogoHeading{
+    width: 90%;
+    /* height: 10%; */
+    /* border: 2px solid red; */
+}
+.contactLogoHeading img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.contactLogoHeading .heading1{
+    font-size: 5rem;
+}
+.contact .contactBox .leftdiv p{
+    font-size: 1.5rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding-right: 2rem;
+    margin-top: 1rem;
+}
+
+.contactBox .leftdiv .cognilinks{
+    /* border: 2px solid red; */
+    /* width: 60%; */
+    margin-top: 1rem;
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+
+.cognilinks i{
+    color: black;
+    font-size: 2rem;
+    padding: 0.8rem;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin-right: 1rem;
+}
+
+.contact .contactBox .middlediv{
+    /* border: 2px solid yellow; */
+    /* height: 100%; */
+    height: 400px;
+
+    /* width: 25%; */
+    flex-basis: 25%;
+    margin: 1rem 0;
+}
+
+.contact .contactBox .rightdiv{
+    /* border: 2px solid green; */
+    /* height: 100%; */
+    height: 400px;
+
+    /* width: 45%; */
+    flex-basis: 45%;
+}
+/* 
+.contact .contactBox .contactContentBox{
+    padding: 1rem;
+} */
+
+.contactBox .middlediv .addressBox{
+    /* border: 2px solid red; */
+    /* height: 10%; */
+    /* margin: 1rem; */
+    padding: 1rem;
+}
+.addressBox p{
+    font-size: 1.5rem;
+    /* display: inline-block; */
+    width: 85%;
+    float: right;
+}
+.middlediv .emailBox{
+    /* border: 2px solid green; */
+    /* height: 10%; */
+    /* margin: 1rem; */
+    padding: 1rem;
+    /* width: 100%; */
+}
+.emailBox p{
+    font-size: 1.5rem;
+    /* display: inline-block; */
+    width: 85%;
+    float: right;
+    margin-top: 1rem;
+    /* border: 2px solid green; */
+}
+
+.middlediv .phoneBox{
+    /* border: 2px solid green; */
+    height: 10%;
+    /* margin: 1rem; */
+    padding: 1rem;
+}
+
+.phoneBox p{
+    font-size: 1.5rem;
+    /* display: inline-block; */
+    width: 85%;
+    float: right;
+}
+
+.addressBox,
+.emailBox,
+.phoneBox i{
+    font-size: 3rem;
+    display: inline-block;
+}
+
+/* rightDiv styling......... */
+
+.rightdiv .contactform{
+    /* border: 2px solid red; */
+    width: 95%;
+    float: right;
+}
+
+.contactform input, .contactform textarea{
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    margin: 1rem 0 1rem 0;
+    font-size: 1.8rem;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid grey;
+    /* font-weight: 100; */
+    
+}
+
+.contactform input[type="submit"]{
+    background-color:rgb(0, 119, 255);
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+
+/* ............ Footer Styling .................. */
+
+.footer{
+    /* border: 2px solid red; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+.footer .footerblock{
+    /* border: 2px solid green; */
+    /* height: 100%; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.footerblock .leftfoot{
+    /* border: 2px solid green; */
+    /* width: 50%; */
+    flex-basis: 50%;
+    height: 100%;
+    padding: 2rem;
+}
+.leftfoot p{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.leftfoot p span{
+    font-weight: 600;
+}
+.footerblock .rightfoot{
+    /* border: 2px solid yellow; */
+    height: 100%;
+    /* width: 50%; */
+    flex-basis: 50%;
+    text-align: center;
+    padding: 2rem;
+}
+
+.rightfoot .footlinkbox{
+    /* border: 2px solid purple; */
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.rightfoot .footlinkbox ul{
+    /* border: 2px solid blue; */
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    /* width: 50%; */
+
+}
+.footlinkbox ul li{
+    display: inline-block;
+}
+
+.footlinkbox ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+
+/* ................. Media Queries .................. */
+@media (max-width: 500px){
+    html{
+        font-size: 50%;
+    }
+/* 
+    .container{
+        width: 78%;
+    } */
+
+    /* ........... Main Media .................... */
+
+    .main .mainContent{
+        /* border: 2px solid red; */
+        display: block;
+    }
+
+    .mainContent .ContentText{
+        width: 100%;
+    }
+    .mainContent .ContentImage{
+        width: 50%;
+        height: 50%;
+        display: none;
+    }
+
+    /* ................ About Media .................... */
+
+    .about .aboutContent{
+        /* border: 2px solid red; */
+        display: block;
+    }
+
+    .aboutContent .leftContent{
+        width: 100%;
+        height: auto;
+    }
+    .aboutContent .rightContent{
+        width: 100%;
+    }
+
+    /*  ................ Services Media ....................... */
+
+    .servicesContainer{
+        /* border: 2px solid red; */
+        /* display: block; */
+        /* height: auto; */
+        width: 100%;
+        /* grid-auto-rows: auto; */
+        flex-direction: column;
+    }
+    .servicesContainer .serviceBox{
+        /* width: 100%; */
+        /* flex-basis: 100%; */
+        flex-basis: 80%;
+        margin: 2rem auto;
+        height: 450px;
+
+        /* border: 2px solid green; */
+        /* display: block; */
+        /* height: auto; */
+    }
+
+    /* ........... INternship Media .............. */
+    .internshipContainer{
+        flex-direction: column;
+        /* width: 100%; */
+        width: 80%;
+    }
+    .internshipContainer .internshipBox{
+        /* flex-basis: 100%; */
+        flex-basis: 80%;
+        margin: 2rem auto;
+        height: 450px;
+
+        text-align: center;
+
+    }
+
+    /* ..................... Feature Media ..................
+     */
+
+    .featuresContainer{
+        flex-direction: column;
+        /* width: 100%; */
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+        /* border: 2px solid green; */
+    }
+
+    .featuresContainer .featureBox{
+        /* flex-basis: 100%; */
+        flex-basis: 80%;
+        /* margin: 4rem auto; */
+        margin: 1rem auto;
+
+        text-align: center;
+    }
+
+    /* .......... Team Media ................... */
+    .teamMemberContainer{
+        flex-direction: column;
+        /* width: 100%; */
+        width: 80%;
+        
+    }
+    .teamMemberContainer .teamMembers{
+        /* flex-basis: 100%; */
+
+        flex-basis: 80%;
+        margin: 2rem auto;
+        height: 400px;
+
+
+    }
+
+    /* ............... Contact Media.................... */
+
+    .contactBox{
+        flex-direction: column;
+        width: 100%;
+    }
+    .contactBox .leftdiv{
+        flex-basis: 80%;
+        margin: 2rem;
+    }
+    .contactBox .middlediv{
+        flex-basis: 80%;
+        margin: 2rem;
+    }
+    .contactBox .rightdiv{
+        flex-basis: 80%;
+        /* border: 2px solid yellow; */
+        margin: 2rem 0;
+    }
+
+    /* ........... footer media .............. */
+
+    .footerblock{
+        width: 100%;
+        flex-direction: column;
+    }
+    .leftfoot{
+        flex-basis: 100%;
+    }
+    .rightfoot{
+        flex-basis: 100%;
+    }
+}
+
+
+/*  Media from 501px to 768px */
+
+@media (min-width:501px) and (max-width: 767px){
+    html{
+        font-size: 50%;
+    }
+/* 
+    .container{
+        width: 78%;
+    } */
+
+    /* ........... Main Media .................... */
+
+    .main .mainContent{
+        /* border: 2px solid red; */
+        display: block;
+    }
+
+    .mainContent .ContentText{
+        width: 100%;
+    }
+    .mainContent .ContentImage{
+        width: 50%;
+        height: 50%;
+        display: none;
+    }
+
+    /* ................ About Media .................... */
+
+    .about .aboutContent{
+        /* border: 2px solid red; */
+        display: block;
+    }
+
+    .aboutContent .leftContent{
+        width: 100%;
+        height: auto;
+    }
+    .aboutContent .rightContent{
+        width: 100%;
+    }
+
+    /*  ................ Services Media ....................... */
+
+    .servicesContainer{
+        /* border: 2px solid red; */
+        /* display: block; */
+        /* height: auto; */
+        width: 100%;
+        /* grid-auto-rows: auto; */
+        flex-direction: column;
+    }
+    .servicesContainer .serviceBox{
+        /* width: 100%; */
+        /* flex-basis: 100%; */
+        flex-basis: 80%;
+        margin: 2rem auto;
+        height: 450px;
+
+        /* border: 2px solid green; */
+        /* display: block; */
+        /* height: auto; */
+    }
+
+    /* ........... INternship Media .............. */
+    .internshipContainer{
+        flex-direction: column;
+        /* width: 100%; */
+        width: 80%;
+    }
+    .internshipContainer .internshipBox{
+        /* flex-basis: 100%; */
+        flex-basis: 80%;
+        margin: 2rem auto;
+        height: 450px;
+
+        text-align: center;
+
+    }
+
+    /* ..................... Feature Media ..................
+     */
+
+    .featuresContainer{
+        flex-direction: column;
+        /* width: 100%; */
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+        /* border: 2px solid green; */
+    }
+
+    .featuresContainer .featureBox{
+        /* flex-basis: 100%; */
+        flex-basis: 80%;
+        /* margin: 4rem auto; */
+        margin: 1rem auto;
+
+        text-align: center;
+    }
+
+    /* .......... Team Media ................... */
+    .teamMemberContainer{
+        flex-direction: column;
+        /* width: 100%; */
+        width: 80%;
+        
+    }
+    .teamMemberContainer .teamMembers{
+        /* flex-basis: 100%; */
+
+        flex-basis: 80%;
+        margin: 2rem auto;
+        height: 400px;
+
+
+    }
+
+    /* ............... Contact Media.................... */
+
+    .contactBox{
+        flex-direction: column;
+        width: 100%;
+    }
+    .contactBox .leftdiv{
+        flex-basis: 80%;
+        margin: 2rem;
+    }
+    .contactBox .middlediv{
+        flex-basis: 80%;
+        margin: 2rem;
+    }
+    .contactBox .rightdiv{
+        flex-basis: 80%;
+        /* border: 2px solid yellow; */
+        margin: 2rem 0;
+    }
+
+    /* ........... footer media .............. */
+
+    .footerblock{
+        width: 100%;
+        flex-direction: column;
+    }
+    .leftfoot{
+        flex-basis: 100%;
+    }
+    .rightfoot{
+        flex-basis: 100%;
+    }
+}
+
+@media (min-width:768px) and (max-width: 1023px){
+    html{
+        font-size: 50%;
+    }
+/* 
+    .container{
+        width: 78%;
+    } */
+
+    /* ........... Main Media .................... */
+
+    .main .mainContent{
+        /* border: 2px solid red; */
+        display: block;
+    }
+
+    .mainContent .ContentText{
+        width: 100%;
+    }
+    .mainContent .ContentImage{
+        width: 50%;
+        height: 50%;
+        display: none;
+    }
+
+    /* ................ About Media .................... */
+
+    .about .aboutContent{
+        /* border: 2px solid red; */
+        display: block;
+    }
+
+    .aboutContent .leftContent{
+        width: 100%;
+        height: auto;
+    }
+    .aboutContent .rightContent{
+        width: 100%;
+    }
+
+    /*  ................ Services Media ....................... */
+
+    .servicesContainer{
+        /* border: 2px solid red; */
+        /* display: block; */
+        /* height: auto; */
+        width: 100%;
+        /* grid-auto-rows: auto; */
+        flex-direction: column;
+    }
+    .servicesContainer .serviceBox{
+        /* width: 100%; */
+        /* flex-basis: 100%; */
+        flex-basis: 40%;
+        margin: 2rem auto;
+        height: 450px;
+
+        /* border: 2px solid green; */
+        /* display: block; */
+        /* height: auto; */
+    }
+
+    /* ........... INternship Media .............. */
+    .internshipContainer{
+        flex-direction: column;
+        /* width: 100%; */
+        width: 80%;
+    }
+    .internshipContainer .internshipBox{
+        /* flex-basis: 100%; */
+        flex-basis: 40%;
+        margin: 2rem auto;
+        /* height: 450px; */
+
+        text-align: center;
+
+    }
+
+    /* ..................... Feature Media ..................
+     */
+
+    .featuresContainer{
+        flex-direction: column;
+        /* width: 100%; */
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+        /* border: 2px solid green; */
+    }
+
+    .featuresContainer .featureBox{
+        /* flex-basis: 100%; */
+        flex-basis: 40%;
+        /* margin: 4rem auto; */
+        margin: 1rem auto;
+
+        text-align: center;
+    }
+
+    /* .......... Team Media ................... */
+    .teamMemberContainer{
+        flex-direction: column;
+        /* width: 100%; */
+        width: 80%;
+        
+    }
+    .teamMemberContainer .teamMembers{
+        /* flex-basis: 100%; */
+
+        flex-basis: 80%;
+        margin: 2rem auto;
+        height: 400px;
+
+
+    }
+
+    /* ............... Contact Media.................... */
+
+    .contactBox{
+        flex-direction: column;
+        width: 100%;
+    }
+    .contactBox .leftdiv{
+        flex-basis: 80%;
+        margin: 2rem;
+    }
+    .contactBox .middlediv{
+        flex-basis: 80%;
+        margin: 2rem;
+    }
+    .contactBox .rightdiv{
+        flex-basis: 80%;
+        /* border: 2px solid yellow; */
+        margin: 2rem 0;
+    }
+
+    /* ........... footer media .............. */
+
+    .footerblock{
+        width: 100%;
+        flex-direction: column;
+    }
+    .leftfoot{
+        flex-basis: 100%;
+    }
+    .rightfoot{
+        flex-basis: 100%;
+    }
+}
