@@ -63,7 +63,7 @@ a{
 
 .header{
     /* border: 2px solid red; */
-    display: none;
+    /* display: none; */
     position: fixed;
     z-index: 100000;
     /* height: 10vh; */
@@ -445,7 +445,7 @@ header.sticky{
     font-size: 1.5rem;   
 }
 .internship .internshipContainer{
-    border:  2px solid rebeccapurple;
+    /* border:  2px solid rebeccapurple; */
     /* padding: 1rem; */
     /* height: 450px; */
     display: flex;
@@ -463,14 +463,14 @@ header.sticky{
 }
 
 .internshipContainer .internshipBox{
-    /* height: 450px; */
+    height: 450px;
     flex-basis: 23%;
     padding: 2rem;
     border-radius: 5px;
-    margin: 1rem 0;
+    /* margin: 1rem 0; */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     transition: all;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
@@ -771,16 +771,6 @@ header.sticky{
     font-size: 1.5rem;
 }
 
-.team .teamMemberContainer{
-    /* border: 2px solid red; */
-    margin-top: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    /* grid-template-columns: repeat(auto-fit, 23.5%); */
-    justify-content: space-between;
-    /* column-gap: 2%; */
-}
-
 .team .teamMemberContainer .teamMembers .memberPicture{
     /* border: 2px solid red; */
     height: 80%;
@@ -802,15 +792,6 @@ header.sticky{
     background: white;
 }
 
-.team .teamMemberContainer .teamMembers{
-    /* border: 2px solid green; */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 5px;
-    /* height: 400px; */
-    flex-basis: 23%;
-    margin: 1rem 0;
-
-}
 
 .teamMembers .memberPicture .memberOverlay{
     /* border:  2px solid red; */
@@ -1223,22 +1204,70 @@ header.sticky{
     }
 
     /* .......... Team Media ................... */
-    .teamMemberContainer{
-        flex-direction: column;
-        /* width: 100%; */
-        width: 80%;
-        
+    .team .teamBlock{
+        /* border: 2px solid green; */
+        margin-top: 2rem;
     }
-    .teamMemberContainer .teamMembers{
-        /* flex-basis: 100%; */
-
-        flex-basis: 80%;
-        margin: 2rem auto;
-        height: 400px;
-
-
+    
+    /* .team .teamBlock .teamContainer1{
+        float: left;
+        width: 49%;
     }
-
+    .teamBlock .teamContainer2{
+        float: right;
+        width: 49%;
+    } */
+    
+    .teamBlock::after{
+        display: block;
+        content: "";
+        clear: both;
+    }
+    .team .teamBlock .teamMemberContainer{
+        /* border: 2px solid red; */
+        margin-top: 2rem;
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        /* grid-template-columns: repeat(auto-fit, 23.5%); */
+        /* justify-content: space-between; */
+        /* column-gap: 2%; */
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        /* margin-top: 2rem; */
+        /* column-gap: ; */
+        /* grid-template-columns: repeat(auto-fit, 23%); */
+        /* gap: 2%; */
+        /* grid-auto-flow: row; */
+        /* padding-bottom: 4rem; */
+        /* justify-content: space-between;    */
+    }
+    
+    .team .teamBlock .teamMemberContainer .teamMembers{
+        /* border: 2px solid green; */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 5px;
+        /* height: 400px; */
+        /* flex-basis: 23%; */
+        width: 100%;
+        /* float: left; */
+        /* margin: 2rem auto;     */
+        /* margin-bottom: 2rem; */
+    }
+    
+    .teamMemberContainer .member1{
+        /* float: left; */
+        margin-bottom: 2rem;
+    } 
+    /* .teamMemberContainer .member2{
+        float: right;
+    } */
+    
+    .teamMemberContainer::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
     /* ............... Contact Media.................... */
 
     .contactBox{
@@ -1329,7 +1358,7 @@ header.sticky{
     .servicesContainer .serviceBox{
         /* width: 100%; */
         /* flex-basis: 100%; */
-        flex-basis: 80%;
+        flex-basis: 40%;
         margin: 2rem auto;
         height: 450px;
 
@@ -1340,13 +1369,14 @@ header.sticky{
 
     /* ........... INternship Media .............. */
     .internshipContainer{
-        flex-direction: column;
+        /* flex-direction: row; */
         /* width: 100%; */
-        width: 80%;
+        width: 100%;
     }
     .internshipContainer .internshipBox{
         /* flex-basis: 100%; */
-        flex-basis: 80%;
+        flex-basis: 40%;
+        /* width: 40%; */
         margin: 2rem auto;
         height: 450px;
 
@@ -1368,7 +1398,7 @@ header.sticky{
 
     .featuresContainer .featureBox{
         /* flex-basis: 100%; */
-        flex-basis: 80%;
+        flex-basis: 40%;
         /* margin: 4rem auto; */
         margin: 1rem auto;
 
@@ -1376,21 +1406,45 @@ header.sticky{
     }
 
     /* .......... Team Media ................... */
-    .teamMemberContainer{
-        flex-direction: column;
-        /* width: 100%; */
-        width: 80%;
-        
+    /* .team .teamBlock{
+        border: 2px solid green;
     }
-    .teamMemberContainer .teamMembers{
-        /* flex-basis: 100%; */
-
-        flex-basis: 80%;
-        margin: 2rem auto;
-        height: 400px;
-
-
+    
+     */
+    
+    
+    .team .teamBlock .teamMemberContainer{
+        /* border: 2px solid red; */
+        margin-top: 2rem;
+        padding-bottom: 4rem;
+       
     }
+    
+    .team .teamBlock .teamMemberContainer .teamMembers{
+        /* border: 2px solid green; */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 5px;
+        /* height: 400px; */
+        /* flex-basis: 23%; */
+        width: 45%;
+        /* float: left; */
+        margin: 1rem 1rem;
+    
+    }
+    
+    .teamMemberContainer .member1{
+        float: left;
+    }
+    .teamMemberContainer .member2{
+        float: right;
+    }
+    
+    .teamMemberContainer::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
 
     /* ............... Contact Media.................... */
 
@@ -1416,17 +1470,17 @@ header.sticky{
 
     .footerblock{
         width: 100%;
-        flex-direction: column;
+        /* flex-direction: column; */
     }
     .leftfoot{
-        flex-basis: 100%;
+        flex-basis: 50%;
     }
     .rightfoot{
-        flex-basis: 100%;
+        flex-basis: 50%;
     }
 }
 
-@media (min-width:768px) and (max-width: 1023px){
+@media (min-width:768px) and (max-width: 1024px){
     html{
         font-size: 50%;
     }
@@ -1490,15 +1544,16 @@ header.sticky{
 
     /* ........... INternship Media .............. */
     .internshipContainer{
-        flex-direction: column;
+        /* flex-direction: row; */
         /* width: 100%; */
-        width: 80%;
+        width: 100%;
     }
     .internshipContainer .internshipBox{
         /* flex-basis: 100%; */
         flex-basis: 40%;
+        /* width: 40%; */
         margin: 2rem auto;
-        /* height: 450px; */
+        height: 450px;
 
         text-align: center;
 
@@ -1526,21 +1581,45 @@ header.sticky{
     }
 
     /* .......... Team Media ................... */
-    .teamMemberContainer{
-        flex-direction: column;
-        /* width: 100%; */
-        width: 80%;
-        
+    /* .team .teamBlock{
+        border: 2px solid green;
     }
-    .teamMemberContainer .teamMembers{
-        /* flex-basis: 100%; */
-
-        flex-basis: 80%;
-        margin: 2rem auto;
-        height: 400px;
-
-
+    
+     */
+    
+    
+    .team .teamBlock .teamMemberContainer{
+        /* border: 2px solid red; */
+        margin-top: 2rem;
+        padding-bottom: 4rem;
+       
     }
+    
+    .team .teamBlock .teamMemberContainer .teamMembers{
+        /* border: 2px solid green; */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 5px;
+        /* height: 400px; */
+        /* flex-basis: 23%; */
+        width: 45%;
+        /* float: left; */
+        margin: 1rem 1rem;
+    
+    }
+    
+    .teamMemberContainer .member1{
+        float: left;
+    }
+    .teamMemberContainer .member2{
+        float: right;
+    }
+    
+    .teamMemberContainer::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
 
     /* ............... Contact Media.................... */
 
@@ -1566,12 +1645,99 @@ header.sticky{
 
     .footerblock{
         width: 100%;
-        flex-direction: column;
+        /* flex-direction: column; */
     }
     .leftfoot{
-        flex-basis: 100%;
+        flex-basis: 50%;
     }
     .rightfoot{
-        flex-basis: 100%;
+        flex-basis: 50%;
     }
+}
+
+/* Width 1024 or more .............. */
+@media (min-width : 1025px){
+    
+
+
+    /* .internship ............. */
+    .internshipBox{
+        margin: 1rem auto;
+    }
+    
+    /* ..................... Feature Media ..................
+     */
+
+     .featuresContainer{
+        flex-direction: column;
+        /* width: 100%; */
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+        /* border: 2px solid green; */
+    }
+
+    .featuresContainer .featureBox{
+        /* flex-basis: 100%; */
+        flex-basis: 40%;
+        /* margin: 4rem auto; */
+        margin: 1rem auto;
+
+        text-align: center;
+    }
+
+    
+        /*.......... TEam sections........  */
+    
+    .team .teamBlock .teamMemberContainer{
+        /* border: 2px solid red; */
+        margin-top: 2rem;
+        padding-bottom: 4rem;
+       
+    }
+    .teamBlock .teamContainer1{
+        width: 49%;
+        float: left;
+        /* border: 2px solid rebeccapurple; */
+    }
+    .teamBlock .teamContainer2{
+        width: 49%;
+        float: right;
+    }
+
+    .teamBlock::after{
+        content : "";
+        display: block;
+        clear: both;
+    }
+    
+    .team .teamBlock .teamMemberContainer .teamMembers{
+        /* border: 2px solid green; */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 5px;
+        /* height: 400px; */
+        /* flex-basis: 23%; */
+        width: 45%;
+        /* float: left; */
+        margin: 1rem 1rem;
+    
+    }
+    
+    .teamMemberContainer .member1{
+        float: left;
+    }
+    .teamMemberContainer .member2{
+        float: right;
+    }
+    
+    .teamMemberContainer::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
+
+    /* ............... Contact Media.................... */
+
+    
 }
