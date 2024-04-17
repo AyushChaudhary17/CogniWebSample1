@@ -169,18 +169,24 @@ header.sticky{
 }
 .main .mainContent{
     /* border: 2px solid green; */
-    height: 400px;
+    /* height: 400px; */
     margin-top: 8rem;
     margin-bottom: 8rem;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
 }
 .mainContent .ContentText{
     /* border: 2px solid red; */
     height: 90%;
-    width: 55%;
-    margin-top: 2rem;
+    width: 33%;
+    margin: 2rem 0;
+    float: left;
 
+}
+.mainContent .mainImage1{
+    width: 33%;
+    float: left;
+    /* display: block; */
 }
 
 .mainContent .ContentText .mainHeading p{
@@ -228,8 +234,15 @@ header.sticky{
 .mainContent .ContentImage{
     /* border: 2px solid green; */
     height: 100%;
-    width: 40%;
+    width: 33%;
+    float: left;
 
+}
+
+.mainContent::after{
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .mainContent .ContentImage img{
@@ -876,21 +889,12 @@ header.sticky{
     /* border: 2px solid green; */
     width: 100%;
     margin-top: 2rem;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
 
 }
 
-.contact .contactBox .leftdiv{
-    /* border: 2px solid red; */
-    /* height: 100%; */
-    height: 400px;
-
-    /* width: 30%; */
-    flex-basis: 30%;
-    margin: 1rem 0;
-}
 
 .contactBox .leftdiv .contactLogoHeading{
     width: 90%;
@@ -932,24 +936,8 @@ header.sticky{
     margin-right: 1rem;
 }
 
-.contact .contactBox .middlediv{
-    /* border: 2px solid yellow; */
-    /* height: 100%; */
-    height: 400px;
 
-    /* width: 25%; */
-    flex-basis: 25%;
-    margin: 1rem 0;
-}
 
-.contact .contactBox .rightdiv{
-    /* border: 2px solid green; */
-    /* height: 100%; */
-    height: 400px;
-
-    /* width: 45%; */
-    flex-basis: 45%;
-}
 /* 
 .contact .contactBox .contactContentBox{
     padding: 1rem;
@@ -1030,6 +1018,12 @@ header.sticky{
     color: white;
     font-size: 2rem;
     font-weight: 600;
+}
+
+.contactBox::after{
+    content: "";
+    display: block;
+    clear: both;
 }
 
 
@@ -1113,22 +1107,29 @@ header.sticky{
         width: 78%;
     } */
 
-    /* ........... Main Media .................... */
-
-    .main .mainContent{
-        /* border: 2px solid red; */
-        display: block;
-    }
-
-    .mainContent .ContentText{
-        width: 100%;
-    }
-    .mainContent .ContentImage{
-        width: 50%;
-        height: 50%;
+    /* ............. Header .............. */
+    .header{
         display: none;
     }
 
+    /* ........... Main Media .................... */
+    .mainContent{
+        height: auto;
+    }
+    .mainContent .mainImage1{
+        float: none;
+        width: 100%;
+
+    }
+    .mainContent .ContentText{
+        float: none;
+        width: 100%;
+    }
+
+    .mainContent .mainImage2{
+        display: none;
+    }
+    
     /* ................ About Media .................... */
 
     .about .aboutContent{
@@ -1271,21 +1272,41 @@ header.sticky{
     /* ............... Contact Media.................... */
 
     .contactBox{
-        flex-direction: column;
+        /* flex-direction: column; */
+        /* width: 100%; */
+        height: auto;
+    }
+    .contact .contactBox .leftdiv{
+        /* border: 2px solid red; */
+        /* height: 100%; */
+        /* height: 400px; */
+    
         width: 100%;
-    }
-    .contactBox .leftdiv{
-        flex-basis: 80%;
-        margin: 2rem;
-    }
-    .contactBox .middlediv{
-        flex-basis: 80%;
-        margin: 2rem;
-    }
-    .contactBox .rightdiv{
-        flex-basis: 80%;
-        /* border: 2px solid yellow; */
+        /* float: left; */
+        /* flex-basis: 30%; */
         margin: 2rem 0;
+    }
+    
+    .contact .contactBox .middlediv{
+        /* border: 2px solid yellow; */
+        /* height: 100%; */
+        /* height: 400px; */
+    
+        width: 100%;
+        /* float: left; */
+        
+        /* flex-basis: 25%; */
+        padding-top: 2rem;
+    }
+        .contact .contactBox .rightdiv{
+        /* border: 2px solid green; */
+        /* height: 100%; */
+        /* height: 400px; */
+    
+        width: 100%;
+        /* float: right; */
+        /* flex-basis: 45%; */
+        padding-top: 2rem;
     }
 
     /* ........... footer media .............. */
@@ -1314,21 +1335,30 @@ header.sticky{
         width: 78%;
     } */
 
-    /* ........... Main Media .................... */
-
-    .main .mainContent{
-        /* border: 2px solid red; */
-        display: block;
-    }
-
-    .mainContent .ContentText{
-        width: 100%;
-    }
-    .mainContent .ContentImage{
-        width: 50%;
-        height: 50%;
+    /* ............. Header ............... */
+    .header{
         display: none;
     }
+
+    /* ........... Main Media .................... */
+
+    .mainContent{
+        height: auto;
+    }
+    .mainContent .mainImage1{
+        float: none;
+        width: 100%;
+
+    }
+    .mainContent .ContentText{
+        float: none;
+        width: 100%;
+    }
+
+    .mainContent .mainImage2{
+        display: none;
+    }
+
 
     /* ................ About Media .................... */
 
@@ -1449,21 +1479,41 @@ header.sticky{
     /* ............... Contact Media.................... */
 
     .contactBox{
-        flex-direction: column;
+        /* flex-direction: column; */
+        /* width: 100%; */
+        height: auto;
+    }
+    .contact .contactBox .leftdiv{
+        /* border: 2px solid red; */
+        /* height: 100%; */
+        /* height: 400px; */
+    
         width: 100%;
-    }
-    .contactBox .leftdiv{
-        flex-basis: 80%;
-        margin: 2rem;
-    }
-    .contactBox .middlediv{
-        flex-basis: 80%;
-        margin: 2rem;
-    }
-    .contactBox .rightdiv{
-        flex-basis: 80%;
-        /* border: 2px solid yellow; */
+        /* float: left; */
+        /* flex-basis: 30%; */
         margin: 2rem 0;
+    }
+    
+    .contact .contactBox .middlediv{
+        /* border: 2px solid yellow; */
+        /* height: 100%; */
+        /* height: 400px; */
+    
+        width: 100%;
+        /* float: left; */
+        
+        /* flex-basis: 25%; */
+        padding-top: 2rem;
+    }
+        .contact .contactBox .rightdiv{
+        /* border: 2px solid green; */
+        /* height: 100%; */
+        /* height: 400px; */
+    
+        width: 100%;
+        /* float: right; */
+        /* flex-basis: 45%; */
+        padding-top: 2rem;
     }
 
     /* ........... footer media .............. */
@@ -1489,20 +1539,37 @@ header.sticky{
         width: 78%;
     } */
 
+    
+    /* ............. Header ............... */
+    .header{
+        /* display: none; */
+    }
+
     /* ........... Main Media .................... */
 
     .main .mainContent{
         /* border: 2px solid red; */
-        display: block;
+        /* display: block; */
+        margin-top: 30rem;
+        
     }
 
     .mainContent .ContentText{
-        width: 100%;
+        width: 49%;
+        /* border: 2px solid red; */
+        
     }
     .mainContent .ContentImage{
-        width: 50%;
-        height: 50%;
+        width: 49%;
+        height: 100%;
+        display: block;
+        /* border: 2px solid green; */
+    }
+    .mainContent .mainImage1{
         display: none;
+        /* border: 2px solid red; */
+        margin: 4rem auto;
+        height: 400px;
     }
 
     /* ................ About Media .................... */
@@ -1624,21 +1691,41 @@ header.sticky{
     /* ............... Contact Media.................... */
 
     .contactBox{
-        flex-direction: column;
-        width: 100%;
+        /* flex-direction: column; */
+        /* width: 100%; */
+        height: auto;
     }
-    .contactBox .leftdiv{
-        flex-basis: 80%;
-        margin: 2rem;
-    }
-    .contactBox .middlediv{
-        flex-basis: 80%;
-        margin: 2rem;
-    }
-    .contactBox .rightdiv{
-        flex-basis: 80%;
-        /* border: 2px solid yellow; */
+    .contact .contactBox .leftdiv{
+        /* border: 2px solid red; */
+        /* height: 100%; */
+        /* height: 400px; */
+    
+        width: 49%;
+        float: left;
+        /* flex-basis: 30%; */
         margin: 2rem 0;
+    }
+    
+    .contact .contactBox .middlediv{
+        /* border: 2px solid yellow; */
+        /* height: 100%; */
+        /* height: 400px; */
+    
+        width: 49%;
+        float: right;
+        
+        /* flex-basis: 25%; */
+        padding-top: 2rem;
+    }
+        .contact .contactBox .rightdiv{
+        /* border: 2px solid green; */
+        /* height: 100%; */
+        /* height: 400px; */
+    
+        width: 100%;
+        /* float: right; */
+        /* flex-basis: 45%; */
+        margin-top: 4rem;
     }
 
     /* ........... footer media .............. */
@@ -1657,16 +1744,61 @@ header.sticky{
 
 /* Width 1024 or more .............. */
 @media (min-width : 1025px){
-    
+    /* .......... Header ................ */
+    /* .header{
+        margin-bottom: 20rem;
+    } */
+    /* ............. main Media ............... */
+
+    .mainContent{
+        height: auto;
+        padding-top: 15rem;
+        /* border: 2px solid green; */
+    }
+    .mainContent .mainImage1{
+        float: none;
+        width: 49%;
+        display: none;
+
+    }
+    .mainContent .ContentText{
+        /* float: none; */
+        width: 49%;
+    }
+
+    .mainContent .mainImage2{
+        /* display: none; */
+        width: 49%;
+    }
+
+    /* ........... About.......... */
+
+    .about{
+        /* margin-top: 20rem; */
+        padding-top: 15rem;
+    }
+
+    /* ............ Services ........... */
+
+    .services{
+        padding-top: 15rem;
+    }
 
 
     /* .internship ............. */
+    .internship{
+        padding-top: 15rem;
+    }
     .internshipBox{
         margin: 1rem auto;
     }
     
     /* ..................... Feature Media ..................
      */
+
+     .features{
+        padding-top: 15rem;
+     }
 
      .featuresContainer{
         flex-direction: column;
@@ -1686,9 +1818,17 @@ header.sticky{
         text-align: center;
     }
 
+    /* ......... testimonial.......... */
+    .testimonial{
+        padding-top: 15rem;
+        /* border: 2px solid red; */
+    }
+
     
         /*.......... TEam sections........  */
-    
+    .team{
+        padding-top: 15rem;
+    }
     .team .teamBlock .teamMemberContainer{
         /* border: 2px solid red; */
         margin-top: 2rem;
@@ -1738,6 +1878,43 @@ header.sticky{
     
 
     /* ............... Contact Media.................... */
+    .contactBox{
+        /* flex-direction: column; */
+        /* width: 100%; */
+        height: auto;
+    }
+    .contact .contactBox .leftdiv{
+        /* border: 2px solid red; */
+        /* height: 100%; */
+        /* height: 400px; */
+    
+        width: 30%;
+        float: left;
+        /* flex-basis: 30%; */
+        margin: 2rem 0;
+    }
+    
+    .contact .contactBox .middlediv{
+        /* border: 2px solid yellow; */
+        /* height: 100%; */
+        /* height: 400px; */
+    
+        width: 25%;
+        float: left;
+        
+        /* flex-basis: 25%; */
+        padding-top: 2rem;
+    }
+        .contact .contactBox .rightdiv{
+        /* border: 2px solid green; */
+        /* height: 100%; */
+        /* height: 400px; */
+    
+        width: 45%;
+        float: right;
+        /* flex-basis: 45%; */
+        padding-top: 2rem;
+    }
 
     
 }
