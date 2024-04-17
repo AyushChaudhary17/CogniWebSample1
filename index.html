@@ -9,7 +9,23 @@
 </head>
 <body>
     <header class="header sticky">
-        <nav class="navbar container">
+           <nav class="navbar container">
+            <div class="hamburgerMenu">
+                <div class="cross">
+
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <ul class="burgerList">
+                    <li class="burgerItems">Home</li>
+                    <li class="burgerItems">Home</li>
+                    <li class="burgerItems">Home</li>
+                    <li class="burgerItems">Home</li>
+                    <li class="burgerItems">Home</li>
+                    <li class="burgerItems">Home</li>
+                </ul>
+
+            </div>
+    
             <div class="logodiv">
                 <div class="logoimg">
                     <img src="./logo2.2.jpg" alt="CogniCraft Solutions">
@@ -29,6 +45,10 @@
 
                 </ul>
             </div>
+            <div class="menuLines">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            
         </nav>
     </header>
     <!-- <header class="header" id="header"> -->
@@ -610,6 +630,24 @@
         header.classList.toggle("sticky", window.scrollY > 0);
     })
 
+    // ........ Hamburger Menu Scripting ............
+    const hamburgerMenu = document.querySelector(".hamburgerMenu");
+    const cross = document.querySelector(".cross i");
+    const menuLines = document.querySelector(".menuLines i");
+    const menu = document.querySelector(".menuLines");
+    hamburgerMenu.classList.add("hidden")
+    cross.addEventListener("click",(e)=>{
+        hamburgerMenu.classList.add("hidden");
+        menu.classList.remove("hidden");
+    })
+
+    menuLines.addEventListener("click",(e)=>{
+        hamburgerMenu.classList.remove("hidden");
+        // menuLines.classList.add("hidden");
+        menu.classList.add("hidden");
+
+        
+    })
 
 </script>
 </html>

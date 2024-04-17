@@ -57,6 +57,12 @@ a{
 }
 
 
+/* .......... For Hiding and showing......... */
+
+.hidden{
+    display: none;
+}
+
 
 /* ........................ Header Styling ......................... */
 /*  */
@@ -73,6 +79,8 @@ a{
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 
 }
+
+
 
 /* Sticky classs .......... */
 header.sticky{
@@ -91,6 +99,50 @@ header.sticky{
     margin-bottom: 2rem;
     /* position: fixed; */
 }
+
+/* .................hamburger Menu Styling.. ............... */
+
+.navbar .hamburgerMenu{
+    border: 2px solid green;
+    width: 60vw;
+    /* height: 80vh; */
+    position: absolute;
+    right: 2%;
+    top: 10%;
+    /* display: none; */
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    z-index: 5;
+
+
+}
+.hamburgerMenu .cross{
+    /* font-size: śrem; */
+    text-align: right;
+    
+}
+
+.hamburgerMenu .cross i{
+    font-size: 3rem;
+}
+
+.hamburgerMenu ul{
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.hamburgerMenu ul .burgerItems{
+    font-size: 2rem;
+    border: 2px solid red;
+    margin: 2rem 0;
+    padding: 1rem;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+
+
 
 .header .navbar .logodiv{
     /* border: 2px solid green; */
@@ -126,7 +178,7 @@ header.sticky{
 
 
 .header .navbar .navlistdiv{
-    /* border:  2px solid yellow; */
+    border:  2px solid yellow;
     width: 50%;
     height: 50%;
     margin: auto 0;
@@ -1109,7 +1161,28 @@ header.sticky{
 
     /* ............. Header .............. */
     .header{
+        display: block;
+    }
+
+    .header .navbar .logodiv{
+        width: 80%;
+        /* border: 2px solid red; */
+    }
+    .header .navbar .navlistdiv{
         display: none;
+    }
+
+    .header .navbar .menuLines{
+        font-size: 2rem;
+        /* border: 2px solid green; */
+        width: 20%;
+        text-align: right;
+    }
+    .navbar .menuLines i{
+        margin: 1rem 2rem;
+        display: block;
+        font-size: 3rem;
+        /* font-weight: 300; */
     }
 
     /* ........... Main Media .................... */
@@ -1337,8 +1410,30 @@ header.sticky{
 
     /* ............. Header ............... */
     .header{
+        display: block;
+    }
+
+    .header .navbar .logodiv{
+        width: 80%;
+        /* border: 2px solid red; */
+    }
+    .header .navbar .navlistdiv{
         display: none;
     }
+
+    .header .navbar .menuLines{
+        font-size: 2rem;
+        /* border: 2px solid green; */
+        width: 20%;
+        text-align: right;
+    }
+    .navbar .menuLines i{
+        margin: 1rem 2rem;
+        display: block;
+        font-size: 3rem;
+        /* font-weight: 300; */
+    }
+
 
     /* ........... Main Media .................... */
 
@@ -1541,9 +1636,6 @@ header.sticky{
 
     
     /* ............. Header ............... */
-    .header{
-        /* display: none; */
-    }
 
     /* ........... Main Media .................... */
 
