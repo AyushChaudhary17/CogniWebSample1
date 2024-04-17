@@ -180,9 +180,10 @@ ul .burgerItems a{
 }
 .navbar .logodiv .logotitle{
     /* border:  2px solid green; */
-    width: 85%;
+    width: 80%;
     text-align: center;
     padding: 0.5rem;
+    text-align: left;
 }
 .logodiv .logotitle .heading2{
     font-weight: 200;
@@ -190,7 +191,7 @@ ul .burgerItems a{
 
 
 .header .navbar .navlistdiv{
-    border:  2px solid yellow;
+    /* border:  2px solid yellow; */
     width: 50%;
     height: 50%;
     margin: auto 0;
@@ -682,6 +683,7 @@ ul .burgerItems a{
     margin-bottom: 4rem;
     padding: 8rem 0;
     height: 80vh;
+    display: none;
 
 }
 
@@ -702,8 +704,9 @@ ul .burgerItems a{
     display: flex;
     justify-content: center;
     align-items: center;
+    /* width: ; */
     /* margin: 10% auto; */
-    /* border: 2px solid red; */
+    /* border: 2px solid green; */
     position: relative;
 }
 
@@ -711,6 +714,7 @@ ul .burgerItems a{
     /* border: 2px solid red; */
     height: 400px;
     margin-top: 2rem;
+    width: 100%;
 }
 
 .scrollWrap img{
@@ -732,7 +736,7 @@ ul .burgerItems a{
 
 .scrollWrap .testimonialContainer .scrollsection{
     /* border: 2px solid yellow; */
-    height: 80%;
+    height: 100%;
     display: flex;
     width: 100%;
     overflow-x: scroll;
@@ -748,11 +752,11 @@ ul .burgerItems a{
 .scrollsection .scrollBox{
     /* border:  2px solid green; */
     height: 100%;
-    display: grid;
+    display: flex;
     width: 100%;
     /* gap: 5%; */
-    grid-template-columns: auto auto;
-    flex: none;
+    /* grid-template-columns: auto auto; */
+    /* flex: none; */
 }
 
 .testimonialContainer .scrollsection .scrollBox .testimonialBox{
@@ -761,6 +765,8 @@ ul .burgerItems a{
     padding: 2rem;
     min-width:  612px;
     position: relative;
+    margin: 2rem 2rem;
+    width: 100%;
 }
 
 .textBox{
@@ -1090,6 +1096,66 @@ ul .burgerItems a{
     clear: both;
 }
 
+/* ........... Testimonial 2 ......... */
+.container2{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dfe9f3;
+}
+.testimonial2{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    /* background-color: #fff; */
+
+}
+.testimonial2 .image{
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimonial2 .slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.slide p{
+    padding: 0 160px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    counter-reset: #333;
+}
+
+.slide .quote-icon{
+    font-size: 30px;
+    counter-reset: blue;
+}
+
+.slide .details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details .name{
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+.details .job{
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+}
 
 /* ............ Footer Styling .................. */
 
@@ -1420,7 +1486,7 @@ ul .burgerItems a{
         width: 78%;
     } */
 
-    /* ............. Header ............... */
+/* ............. Header .............. */
     .header{
         display: block;
     }
@@ -1648,6 +1714,31 @@ ul .burgerItems a{
 
     
     /* ............. Header ............... */
+    /* ............. Header .............. */
+    .header{
+        display: block;
+    }
+
+    .header .navbar .logodiv{
+        width: 40%;
+        /* border: 2px solid red; */
+    }
+    .header .navbar .navlistdiv{
+        display: none;
+    }
+
+    .header .navbar .menuLines{
+        font-size: 2rem;
+        /* border: 2px solid green; */
+        width: 20%;
+        text-align: right;
+    }
+    .navbar .menuLines i{
+        margin: 1rem 2rem;
+        display: block;
+        font-size: 3rem;
+        /* font-weight: 300; */
+    }
 
     /* ........... Main Media .................... */
 
@@ -1849,9 +1940,34 @@ ul .burgerItems a{
 /* Width 1024 or more .............. */
 @media (min-width : 1025px){
     /* .......... Header ................ */
-    /* .header{
-        margin-bottom: 20rem;
-    } */
+    /* ............. Header .............. */
+    .header{
+        display: block;
+    }
+
+    .header .navbar .logodiv{
+        width: 30%;
+        /* border: 2px solid red; */
+    }
+    .header .navbar .navlistdiv{
+        display: block;
+        width: 50%;
+    }
+
+    .header .navbar .menuLines{
+        font-size: 2rem;
+        /* border: 2px solid green; */
+        display: none;
+        width: 20%;
+        text-align: right;
+    }
+    .navbar .menuLines i{
+        margin: 1rem 2rem;
+        display: block;
+        font-size: 3rem;
+        /* font-weight: 300; */
+    }
+
     /* ............. main Media ............... */
 
     .mainContent{
