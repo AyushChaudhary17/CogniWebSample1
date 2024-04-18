@@ -53,7 +53,16 @@ a{
     background-color: white;
     /* color: black; */
     border-radius: 50px;
-    /* padding: 1rem; */
+    padding: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.btn1:hover{
+    /* background: blue; */
+    background-color:rgb(0, 119, 255);
+    color: white;
+
 }
 
 
@@ -73,7 +82,7 @@ a{
     position: fixed;
     z-index: 100000;
     /* height: 10vh; */
-    background-color: white;
+    background-color: black;
     width: 100%;
     padding: 20px 0 20px 0;
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
@@ -97,6 +106,7 @@ header.sticky{
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
+    color: white;
     /* position: fixed; */
 }
 
@@ -209,6 +219,7 @@ ul .burgerItems a{
     color: black;
     font-size: 1.5rem;
     font-weight: 300;
+    color: white;
 }
 
 /* ..................... Header Styling.................... */
@@ -227,7 +238,7 @@ ul .burgerItems a{
     /* border: 2px solid red; */
     /* height: 90vh; */
     /* margin: 5rem 0 5rem 0; */
-    /* margin-top: 2rem; */
+    /* margin-top: 10rem; */
     position: relative;
     padding: 5rem 0 5rem 0;
 
@@ -235,23 +246,24 @@ ul .burgerItems a{
 .main .mainContent{
     /* border: 2px solid green; */
     /* height: 400px; */
-    margin-top: 8rem;
-    margin-bottom: 8rem;
+    /* margin-top: 8rem; */
+    /* margin-bottom: 8rem; */
     /* display: flex; */
     /* justify-content: space-between; */
 }
 .mainContent .ContentText{
     /* border: 2px solid red; */
-    height: 90%;
+    height: 100%;
     width: 33%;
-    margin: 2rem 0;
+    margin-top: 12rem;
     float: left;
+
 
 }
 .mainContent .mainImage1{
     width: 33%;
     float: left;
-    /* display: block; */
+    /* display: none; */
 }
 
 .mainContent .ContentText .mainHeading p{
@@ -259,7 +271,8 @@ ul .burgerItems a{
     /* height: 40%; */
     font-size: 4rem;
     font-weight: 600;
-    line-height: 4.5rem;
+    line-height: 5rem;
+    margin: 4rem 0;
 }
 .mainContent .ContentText .subHeading{
     margin-top: 0.5rem;
@@ -279,28 +292,34 @@ ul .burgerItems a{
     /* border:  2px solid yellow; */
     height: 15%;
     margin-top: 4rem;
+    /* text-align: center; */
 
 }
 .ContentText .textButton .btn1{
     height: 100%;
-    width: 18%;
+    width: 20%;
     /* border: 1px solid black; */
     /* color: black; */
     border-radius: 50px;
     /* padding: 1rem; */
+    margin-left: 40%;
 }
 .ContentText .textButton .btn1 a{
     color: black;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 100;
     letter-spacing: 1px;
+}
+
+.textButton .btn1:hover a{
+    color: white;
 }
 
 .mainContent .ContentImage{
     /* border: 2px solid green; */
     height: 100%;
     width: 33%;
-    float: left;
+    float: right;
 
 }
 
@@ -336,7 +355,7 @@ ul .burgerItems a{
 .about{
     /* border:  2px solid red; */
     /* height: 60vh; */
-    padding: 8rem 0;
+    /* padding: 8rem 0; */
 
 
 }
@@ -359,41 +378,208 @@ ul .burgerItems a{
     /* border:  2px solid yellow; */
     height: 100%;
     padding: 1rem;
-    width: 50%;
+    width: 45%;
 }
 .aboutContent .rightContent{
     /* border:  2px solid yellow; */
     height:  100%;
     padding: 1rem;
-    width: 50%;
+    width: 45%;
 }
 
 .aboutContent .leftContent p,
 .aboutContent .rightContent p{
-    font-size: 1.5rem;
+    /* font-size: 2rem; */
+    font-size: 2rem;
+    font-weight: 200;
+    text-align:center;
 }
 
 .rightContent .btn1{
     padding: 1rem;
     margin-top: 3rem;
+    margin-left: 40%;
     letter-spacing: 1px;
+    width: 150px;
+    /* border: 2px solid rgb(177, 22, 22); */
 
     font-weight: 100;
 }
+.rightContent .btn1 a{
+    font-size: 1.6rem;
+}
 
+.btn1:hover a{
+    color: white;
+}
+/* ......... company Reveiw. ....... */
+
+.about .companyReviews{
+    /* border: 2px solid red; */
+    height: 450px;
+    margin-top: 10rem;
+}
+
+.about .reviewImage{
+    width: 39%;
+    /* border: 2px solid green; */
+    height: 100%;
+    float: left;
+}
+
+.about .reviewImage img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: fill;
+}
+.about .reviewContent{
+    width: 59%;
+    /* border: 2px solid green; */
+    height: 100%;
+    float: right;
+}
+.companyReviews::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.reviewContent .leftReview{
+    /* border: 2px solid yellow; */
+    width: 49%;
+    height: 100%;
+    float: left;
+}
+.reviewContent .rightReview{
+    /* border: 2px solid green; */
+    width: 49%;
+    height: 100%;
+    float: right;
+}
+
+.reviewContent::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.leftReview .leftReviewContentUp{
+    width: 100%;
+    height: 50%;
+    /* border: 2px solid green; */
+}
+
+.leftReview .leftReviewContentDown{
+    width: 100%;
+    height: 50%;
+    /* border: 2px solid green; */
+}
+
+
+.leftReview .leftReviewContentUp .reviewIcon{
+    width: 20%;
+    height: 100%;
+    /* border: 2px solid yellow; */
+    float: left;
+    padding-top: 2rem;
+}
+
+.leftReview .leftReviewContentDown .reviewIcon{
+    width: 20%;
+    height: 100%;
+    /* border: 2px solid yellow; */
+    float: left;
+    padding-top: 2rem;
+
+
+}
+
+/* ........rightReview ............. */
+.rightReview .rightReviewContentUp{
+    width: 100%;
+    height: 50%;
+    /* border: 2px solid green; */
+}
+
+.rightReview .rightReviewContentDown{
+    width: 100%;
+    height: 50%;
+    /* border: 2px solid green; */
+}
+
+
+.rightReview .rightReviewContentUp .reviewIcon{
+    width: 20%;
+    height: 100%;
+    /* border: 2px solid yellow; */
+    float: left;
+    padding-top: 2rem;
+
+}
+
+.rightReview .rightReviewContentDown .reviewIcon{
+    width: 20%;
+    height: 100%;
+    /* border: 2px solid yellow; */
+    float: left;
+    padding-top: 2rem;
+
+}
+
+.reviewIcon{
+    padding: 1rem;
+    text-align: center;
+}
+.reviewIcon i{
+    font-size: 4rem;
+}
+
+.rightReviewContentDown::after,
+.rightReviewContentUp::after,
+.leftReviewContentUp::after,
+.leftReviewContentDown::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* ............review content box ......... */
+.reviewContentBox{
+    /* border: 2px solid red; */
+    width: 79%;
+    float: right;
+    height: 100%;
+    padding: 1rem;
+}
+
+.reviewContentBox .heading1{
+    text-align: left;
+}
+.reviewContentBox p{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.reviewContentBox p span{
+    font-weight: 600;
+}
 /*  ...................... Services Styling ........................ */
 
 .services{
     /* border:  2px solid red; */
     /* height: 80vh; */
-    margin-top: 8rem;
-    padding: 8rem 0;
+    /* margin-top: 8rem; */
+    /* padding: 8rem 0; */
     
 
 }
 .services .serviceHeading{
     /* border: 2px solid green; */
     margin-top: 2rem;
+    margin-bottom: 4rem;
     text-align: center;
 }
 .serviceHeading .heading1{
@@ -433,6 +619,7 @@ ul .burgerItems a{
     border-radius: 5px;
     /* box-shadow:  5px  10px gray; */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
 
 }
 
@@ -443,7 +630,7 @@ ul .burgerItems a{
 } */
 
 .serviceBox:hover{
-    background-color: black;
+    background-color: darkgrey;
     color: white;
 }
 
@@ -462,8 +649,10 @@ ul .burgerItems a{
 
 /* .......servicesBox styling........... */
 .serviceBox .heading3{
-    text-align: left;
+    text-align: center;
     font-weight: 500;
+    font-size: 2rem;
+    /* margin: ; */
     /* z-index: 5; */
     /* color: white; */
 }
@@ -492,7 +681,7 @@ ul .burgerItems a{
     border: 2px solid white;
 }
 .serviceBox p{
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 2.5rem;
 }
 
@@ -510,6 +699,7 @@ ul .burgerItems a{
     /* border: 2px solid green; */
     margin-top: 2rem;
     text-align: center;   
+    margin-bottom: 4rem;
 }
 .internship .internshipHeading .heading1{
     /* font-size: 3.2rem; */
@@ -571,9 +761,10 @@ ul .burgerItems a{
     /* z-index: 5; */
 }
 .internshipBox p{
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin: 2rem 0 1rem 0;
     line-height: 2.5rem;
+    text-align: center;
 }
 
 
@@ -598,14 +789,19 @@ ul .burgerItems a{
     color: white;
     background: black;
 }
+.internshipBox .internshipButton{
+    text-align: center;
+}
 .internshipBox .btn1{
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    width: 22%;
+    padding: 1rem 2rem 1rem 2rem;
+    width: 30%;
     background-color: black;
     /* color: white; */
+    margin: 0 30%;
 }
 .internshipBox .btn1 a{
     color: white;
+    font-size: 1.5rem;
 }
 
 /* ................. Features Styling .................. */
@@ -624,6 +820,7 @@ ul .burgerItems a{
 .features .featuresHeadingContainer{
     text-align: center;
     margin-top: 2rem;
+    margin-bottom: 4rem;
 
 }
 
@@ -1296,6 +1493,25 @@ ul .burgerItems a{
         width: 100%;
     }
 
+
+    /* Company review........................ */
+
+    .companyReviews .reviewImage{
+        float: none;
+        width: 100%;
+    }
+
+    .companyReviews .reviewContent{
+        float: none;
+        width: 100%;
+    }
+
+    .reviewContent .leftReview,
+    .reviewContent .rightReview{
+        float: none;
+        width: 100%;
+    }
+
     /*  ................ Services Media ....................... */
 
     .servicesContainer{
@@ -1548,6 +1764,25 @@ ul .burgerItems a{
         width: 100%;
     }
 
+    /* Company review........................ */
+
+    .companyReviews .reviewImage{
+        float: none;
+        width: 100%;
+    }
+
+    .companyReviews .reviewContent{
+        float: none;
+        width: 100%;
+    }
+
+    .reviewContent .leftReview,
+    .reviewContent .rightReview{
+        float: none;
+        width: 100%;
+    }
+
+
     /*  ................ Services Media ....................... */
 
     .servicesContainer{
@@ -1782,6 +2017,25 @@ ul .burgerItems a{
         width: 100%;
     }
 
+    /* Company review........................ */
+
+    .companyReviews .reviewImage{
+        float: none;
+        width: 100%;
+    }
+
+    .companyReviews .reviewContent{
+        float: none;
+        width: 100%;
+    }
+
+    /* .reviewContent .leftReview,
+    .reviewContent .rightReview{
+        float: none;
+        width: 100%;
+    } */
+
+
     /*  ................ Services Media ....................... */
 
     .servicesContainer{
@@ -1969,10 +2223,12 @@ ul .burgerItems a{
     }
 
     /* ............. main Media ............... */
-
+    /* .main{
+        padding-bottom: 15rem;
+    } */
     .mainContent{
         height: auto;
-        padding-top: 15rem;
+        padding-top: 8rem;
         /* border: 2px solid green; */
     }
     .mainContent .mainImage1{
