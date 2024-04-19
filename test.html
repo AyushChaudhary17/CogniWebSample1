@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .popUp{
+    /* width: 100px;
+    height: 100px;
+    background-color: red; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    /* display: block; */
+    z-index: 1
+}
+
+.ContentBox {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background: rgb(221, 219, 224);
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1)
+}
+
+.ContentBox .imgBox {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.ContentBox .imgBox::before {
+    content: '';
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background: #aaada9;
+    border-radius: 50%
+}
+
+.ContentBox .imgBox img {
+    position: relative;
+    max-width: 200px;
+    z-index: 1
+}
+
+.ContentBox .Content {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.ContentBox .Content h3 {
+    color: #333;
+    line-height: 1em;
+    font-weight: 300;
+    font-size: 2em
+}
+
+.ContentBox .Content p {
+    font-size: 1.25em;
+    font-weight: 300;
+    padding: 12px 2px
+}
+
+.Click {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #fff;
+    background-color: #0e63e2;
+    box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .3)
+}
+
+.Click:hover {
+    color: #fff;
+    letter-spacing: .1rem;
+    opacity: .8
+}
+
+.Close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: #f3f3f3 url(nclose.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer
+}
+
+.Cross {
+    padding: 5px
+}
+
+@media (max-width:767px) {
+    .ContentBox {
+        width: 300px;
+        height: auto;
+        flex-direction: column
+    }
+    .ContentBox .imgBox {
+        height: 200px;
+        transform: translateY((-50px))
+    }
+    .ContentBox .imgBox ::before {
+        background: #fff
+    }
+    .ContentBox .Content {
+        height: auto;
+        text-align: center;
+        padding: 20px;
+        padding-top: 36px
+    }
+    .Close {
+        top: -50px;
+        right: -10px;
+        background: #fff url(nclose.png);
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-position: center
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="popUp">
+        <div class="ContentBox">
+            <div class="Close"><img class="Cross" src="../assets/img/download.png" alt="Close icon" /></div>
+            <div class="imgBox" data-aos="zoom-in-up">
+                <img src="../assets/img/hiring.webp" alt="Hiring  popup Image">
+            </div>
+            <div class="Content">
+                <div>
+                    <h3>Looking for Internships!</h3>
+                    <p>Your door to opportunity!</p>
+                    <a class="Click" href="#internships">Internship</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        const main = document.querySelector(".main"),
+        popup = document.querySelector(".popUp"),
+        close = document.querySelector(".Close"),
+        click = document.querySelector(".Click");
+        window.onload = function() {
+        setTimeout(() => {
+            popup.style.display = "block", main.style.filter = "blur(2px)"
+        }, 2e3)
+    }, close.addEventListener("click", () => {
+        popup.style.display = "none", main.style.filter = "blur(0px)"
+    }), click.addEventListener("click", () => {
+        popup.style.display = "none", main.style.filter = "blur(0px)"
+    }), setTimeout(function() {
+        $(".loader_bg").fadeOut()
+    }, 400);
+    </script>
+</body>
+</html>

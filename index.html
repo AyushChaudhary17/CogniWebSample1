@@ -10,13 +10,27 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- ...... Link Swiper Css ...... -->
     <!-- <link rel="stylesheet" href="./swiper-bundle.min.css"> -->
-
+    <!-- Vendor CSS Files.............. -->
+    <link rel="stylesheet" href="../assets/vendor/aos/aos.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/vendor/glightbox/css/glightbox.min.css">
+    <link rel="stylesheet" href="../assets/vendor/remixicon/remixicon.css">
+    <link rel="stylesheet" href="../assets/vendor/swiper/swiper-bundle.min.css">
+    
+    
+    <link rel="stylesheet" href="./file2.css">
     <link rel="stylesheet" href="./style.css">
     <script src="./file1.js" defer></script>
 
     <title>home</title>
 </head>
 <body>
+    <!-- ======= LOADER ======= -->
+    <div class="loader_bg" id="preloader">
+        <div class="loader"></div>
+    </div>
+
     <header class="header sticky">
            <nav class="navbar container">
             <div class="hamburgerMenu">
@@ -41,7 +55,7 @@
     
             <div class="logodiv">
                 <div class="logoimg">
-                    <img src="./logo2.2.jpg" alt="CogniCraft Solutions">
+                    <img src="./new logo2.png" alt="CogniCraft Solutions">
                 </div>
                 <div class="logotitle"><h1 class=" heading2">CoggniCraft Solutions</h1></div>
             </div>
@@ -86,16 +100,35 @@
                 <img src="./main design1.png" alt="">
             </div>
         </div>
-        <!-- <div class="partnersdiv">
-            This is Partners section
-        </div> -->
+
+        
+       
+
+            <div class="popUp">
+                <div class="ContentBox">
+                    <div class="Close"><img class="Cross" src="../assets/img/download.png" alt="Close icon" /></div>
+                    <div class="imgBox" data-aos="zoom-in-up">
+                        <img src="../assets/img/hiring.webp" alt="Hiring  popup Image">
+                    </div>
+                    <div class="Content">
+                        <div>
+                            <h3>Looking for Internships!</h3>
+                            <p>Your door to opportunity!</p>
+                            <a class="Click" href="#internships">Internship</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
     </section>
+
+    
 
     <!-- ................... About Page Starting .............. -->
 
     <section class="about" id="about" >
         <div class="aboutheading">
-            <h1 class="heading1">ABOUT US</h1>
+            <h1 class="heading1 section-title">ABOUT US</h1>
         </div>
         <div class="aboutContent container">
             <div class="leftContent" >
@@ -232,7 +265,7 @@
                 <h3 class="heading3">Internship Title</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nesciunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facere consectetur voluptas tenetur earum quia distinctio maxime, maiores dicta quibusdam.</p>
                 <button class="btn1">
-                    <a href="">Apply</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5R2pOPzlgHWpuXBOMKOUWb9p0Kv3os6N7I15m7xoShjy7Zw/viewform?usp=sf_link">Apply</a>
                 </button> 
                 
             </div>
@@ -243,7 +276,7 @@
                 <h3 class="heading3">Internship Title</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nesciunt! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam excepturi dolores illo odit molestias placeat aperiam nemo adipisci. Assumenda, est.</p>
                 <button class="btn1">
-                    <a href="">Apply</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5R2pOPzlgHWpuXBOMKOUWb9p0Kv3os6N7I15m7xoShjy7Zw/viewform?usp=sf_link">Apply</a>
                 </button> 
                 
             </div>
@@ -254,7 +287,7 @@
                 <h3 class="heading3">Internship Title</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nesciunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur autem officiis error consequuntur minima rem officia repudiandae totam nemo impedit?</p>
                 <button class="btn1">
-                    <a href="">Apply</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5R2pOPzlgHWpuXBOMKOUWb9p0Kv3os6N7I15m7xoShjy7Zw/viewform?usp=sf_link">Apply</a>
                 </button> 
                 
             </div>
@@ -265,7 +298,7 @@
                 <h3 class="heading3">Internship Title</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nesciunt! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid animi quis facilis, earum placeat corporis ratione fuga repellat accusantium nihil!</p>
                 <button class="btn1">
-                    <a href="">Apply</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5R2pOPzlgHWpuXBOMKOUWb9p0Kv3os6N7I15m7xoShjy7Zw/viewform?usp=sf_link">Apply</a>
                 </button> 
                 
             </div>
@@ -276,7 +309,7 @@
                 <h3 class="heading3">Internship Title</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nesciunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore omnis fuga provident quas voluptatibus quam facere, assumenda porro eligendi consequuntur!</p>
                 <button class="btn1">
-                    <a href="">Apply</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5R2pOPzlgHWpuXBOMKOUWb9p0Kv3os6N7I15m7xoShjy7Zw/viewform?usp=sf_link">Apply</a>
                 </button> 
                 
             </div>
@@ -287,7 +320,7 @@
                 <h3 class="heading3">Internship Title</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nesciunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quae et blanditiis ipsa soluta ratione cum porro laudantium aliquam totam.</p>
                 <button class="btn1">
-                    <a href="">Apply</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5R2pOPzlgHWpuXBOMKOUWb9p0Kv3os6N7I15m7xoShjy7Zw/viewform?usp=sf_link">Apply</a>
                 </button> 
                 
             </div>
@@ -298,7 +331,7 @@
                 <h3 class="heading3">Internship Title</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nesciunt! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt dolorum consequuntur pariatur, dolorem iure animi minus recusandae aspernatur deleniti cumque.</p>
                 <button class="btn1">
-                    <a href="">Apply</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5R2pOPzlgHWpuXBOMKOUWb9p0Kv3os6N7I15m7xoShjy7Zw/viewform?usp=sf_link">Apply</a>
                 </button> 
                 
             </div>
@@ -311,7 +344,7 @@
                 <div class="internshipButton">
 
                     <button class="btn1">
-                        <a href="">Apply</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5R2pOPzlgHWpuXBOMKOUWb9p0Kv3os6N7I15m7xoShjy7Zw/viewform?usp=sf_link">Apply</a>
                     </button> 
                 </div>
                 
@@ -381,6 +414,104 @@
             </div>
         </div>
     </section>
+
+    <section id="testimonials" class="testimonials section-bg">
+        <div class="container">
+
+            <div class="section-title" >
+                <h2>Testimonials</h2>
+                <p>Hear what our clients have to say about their experiences with Codingbears.</p>
+            </div>
+
+            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <img src="assets/img/testimonials/testimonial1.webp" class="testimonial-img" alt="First testimonial Image">
+                                <h3>Mrityunjay Yadav</h3>
+                                <h4>Ceo &amp; Founder</h4>
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i> Codingbears isn't just a development team; they're partners in our success. Their commitment to excellence is the cornerstone of our collaboration.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <img src="assets/img/testimonials/testimonials-2.webp" class="testimonial-img" alt="Second testimonial Image">
+                                <h3>Sara Wilsson</h3>
+                                <h4>Designer</h4>
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i> Embrace the journey of growth, for in every challenge lies an opportunity to learn, and in every learning, there is a chance to become the best version of yourself.
+                                    Seize the moments, learn from the experiences, and let your unique journey inspire the extraordinary within you.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <img src="assets/img/testimonials/testimonials-3.webp" class="testimonial-img" alt="Third testimonial Image">
+                                <h3>Jena Karlis</h3>
+                                <h4>Sales and services</h4>
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i> Codingbears has been a valuable partner in our e-commerce journey. Their e-commerce solutions and support have significantly contributed to our success.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <img src="assets/img/testimonials/testimonials-4.webp" class="testimonial-img" alt="Fourth testimonial Image">
+                                <h3>Matt Brandon</h3>
+                                <h4>Freelancer</h4>
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i> Collaborating with Codingbears as a freelancer has been a game-changer for my career. Their commitment to quality, flexibility, and support has allowed me to
+                                    deliver exceptional results to my clients.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <img src="assets/img/testimonials/testimonials-5.webp" class="testimonial-img" alt="Fifth testimonial Image">
+                                <h3>John Larson</h3>
+                                <h4>Entrepreneur</h4>
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i> Partnering with Codingbears has been a strategic move for our startup. Their innovative solutions and dedicated support have played a pivotal role in our success
+                                    journey. Codingbears is not just a development team; they are collaborators who understand the unique challenges of entrepreneurs.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End testimonial item -->
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section>
+
+
     <section class="testimonial">
         <div class="testimonialHeading">
             <h1 class="heading1">TESTIMONIAL</h1>
@@ -636,38 +767,17 @@
                 </div>
             </div>
             <div class="rightdiv contactContentBox" data-aos="fade-up">
-                <form action="" class="contactform">
-                    <input type="text" placeholder="Enter your name" required>
-                    <input type="email" placeholder="Enter your email" required>
-                    <textarea name="" id="" cols="30" rows="6" placeholder="Enter your messgage here" required></textarea>
-                    <input type="submit">
+                <form action="" class="contactform" name="submit-to-google-sheet" id="form">
+                    <input type="text" placeholder="Enter your name" name="Name" required>
+                    <input type="email" placeholder="Enter your email" name="Email" required>
+                    <textarea name="Message" id="" cols="30" rows="6" placeholder="Enter your messgage here" required></textarea>
+                    <input type="submit" id="submit">
                 </form>
+                <span class="msg" id="msg"></span>
             </div>
         </div>
     </section>
 
-    <!-- .............. Testimonial 2 ............. -->
-    <!-- <section class="container2">
-
-        <div class="testimonial2 mySwiper">
-            <div class="testi-content swiper-wrapper">
-                <div class="slide swiper-slide">
-                    <img src="./CogniCraft Logo.jpg" alt="" class="image">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, id est? Excepturi debitis minus nemo iusto ipsum minima quidem nihil?</p>
-                    <i class='bx bxs-quote-alt-left quote-icon'></i>
-                    <div class="details">
-                        <span class="name">XYZ</span>
-                        <span class="job">XYZ</span>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-
-        </div>
-    </section> -->
 
     <!-- ............. Footer Section ............... -->
     
@@ -693,16 +803,66 @@
 
     <!-- Testimonial js.............. -->
     <!-- <script src="./swiper-bundle.min.js"></script> -->
+    <script src="./swiper/swiper-bundle.min.js"></script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
-        offset: 300,
+        offset: 150,
         delay: 0,
         duration: 1000,
       });
     </script>
 
+    <script type="text/javascript">
+
+        const loader = document.querySelector("#preloader");
+        window.addEventListener("load", ()=>{
+            loader.style.display = "none";
+        })
+
+        const main = document.querySelector(".Main"),
+        popup = document.querySelector(".popUp"),
+        close = document.querySelector(".Close"),
+        click = document.querySelector(".Click");
+        window.onload = function() {
+        setTimeout(() => {
+            popup.style.display = "block", main.style.filter = "blur(2px)"
+        }, 2e3)
+    }, close.addEventListener("click", () => {
+        popup.style.display = "none", main.style.filter = "blur(0px)"
+    }), click.addEventListener("click", () => {
+        popup.style.display = "none", main.style.filter = "blur(0px)"
+    }), setTimeout(function() {
+        $(".loader_bg").fadeOut()
+    }, 400);
+
+
+        // Web form Input ............
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwLFFTouUrvoPS0rx02kWoSIBpVJv9Q82Zbw28vdqb7vmHvU6Uofp3SfmuKnk69kTOI/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg= document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully !"
+                alert ('Success!', response)
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => alert('Error!', error.message))
+
+
+        })
+
+
+    </script>
+    
    
 </body>
 
