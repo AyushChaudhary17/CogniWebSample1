@@ -1,0 +1,1 @@
+No Content: https://codingbears.in/assets/vendor/php-email-form/validate.js

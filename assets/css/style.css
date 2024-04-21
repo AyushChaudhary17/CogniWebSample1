@@ -1,0 +1,2507 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/* .................. UTILITY CLASSES ..................... */
+
+.container{
+    max-width: 1300px;
+    width: 90%;
+    margin: auto;
+}
+
+.heading1{
+    font-size: 3rem;
+}
+.heading2{
+    font-size: 2.5rem;
+}
+.heading3{
+    font-size: 2rem;
+}
+.heading4{
+    font-size: 1.8rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.btn1{
+    width: 18%;
+    border: 1.5px solid black;
+    background-color: white;
+    border-radius: 50px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.btn1:hover{
+    background-color:rgb(0, 119, 255);
+    color: white;
+
+}
+
+
+/* .......... For Hiding and showing......... */
+
+.hidden{
+    display: none;
+}
+
+
+/* ........................ Header Styling ......................... */
+/*  */
+
+.header{
+    position: fixed;
+    z-index: 100000;
+    background-color: black;
+    width: 100%;
+    padding: 20px 0 20px 0;
+
+}
+
+
+
+/* Sticky classs .......... */
+header.sticky{
+    padding: 5px 0 5px 0;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.header .navbar{
+    height: 80%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+/* .................hamburger Menu Styling.. ............... */
+
+.navbar .hamburgerMenu{
+    width: 70vw;
+    height: 80vh;
+    position: absolute;
+    right: 2%;
+    top: 10%;
+    background-color: black;
+    display: none;
+    padding: 2rem;
+    border-radius: 5px;
+    z-index: 5;
+    opacity: 0.8;
+
+
+}
+.hamburgerMenu .cross{
+    text-align: right;
+    color: white;
+    
+}
+
+.hamburgerMenu .cross i{
+    font-size: 3rem;
+}
+
+.hamburgerMenu ul{
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.hamburgerMenu ul .burgerItems{
+    margin: 2rem 0;
+    padding: 1rem;
+    letter-spacing: 1px;
+    color: white;
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+ul .burgerItems a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+}
+
+
+
+
+.header .navbar .logodiv{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    height: 50px;
+}
+
+.navbar .logodiv .logoimg{
+    width: 15%;
+
+}
+
+.navbar .logodiv .logoimg img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.navbar .logodiv .logotitle{
+    width: 80%;
+    text-align: center;
+    padding: 0.5rem;
+    text-align: left;
+}
+.logodiv .logotitle .heading2{
+    font-weight: 200;
+}
+
+
+.header .navbar .navlistdiv{
+    width: 50%;
+    height: 50%;
+    margin: auto 0;
+}
+
+/* ..............Navbar list Styling ............... */
+
+.navlistdiv .navlist{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navlist .listitems .heading4{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: white;
+}
+
+
+/* ............... Main Head Styling .................. */
+
+.main{
+   position: relative;
+    padding: 5rem 0 5rem 0;
+
+}
+.mainContent .ContentText{
+    height: 100%;
+    width: 33%;
+    margin-top: 12rem;
+    float: left;
+
+
+}
+.mainContent .mainImage1{
+    width: 33%;
+    float: left;
+}
+
+.mainContent .ContentText .mainHeading p{
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 5rem;
+    margin: 4rem 0;
+}
+.mainContent .ContentText .subHeading{
+    margin-top: 0.5rem;
+}
+
+
+.mainContent .ContentText .subHeading p{
+    font-size: 2rem;
+    font-weight: 200;
+
+
+}
+
+.mainContent .ContentText .textButton{
+    height: 15%;
+    margin-top: 4rem;
+
+}
+.ContentText .textButton .btn1{
+    height: 100%;
+    /* width: 20%; */
+    width: 150px;
+    border-radius: 50px;
+    margin-left: 40%;
+}
+.ContentText .textButton .btn1 a{
+    color: black;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.textButton .btn1:hover a{
+    color: white;
+}
+
+.mainContent .ContentImage{
+    height: 100%;
+    width: 33%;
+    float: right;
+
+}
+
+.mainContent::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.mainContent .ContentImage img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+}
+
+
+/* ............... Partner Div styling ............ */
+.main .partnersdiv{
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+/* ............PopUP styling............ */
+/* .popUp{
+    height: 100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 1000;
+}
+
+.ContentBox {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-image: linear-gradient(to right, #f87e04fe 0%, #f9c404 100%);
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1)
+}
+
+.ContentBox .imgBox {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.ContentBox .imgBox::before {
+    content: '';
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background: white;
+    border-radius: 50%
+}
+
+.ContentBox .imgBox img {
+    position: relative;
+    max-width: 200px;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+
+.ContentBox .Content {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.ContentBox .Content h3 {
+    color: #333;
+    line-height: 1em;
+    font-weight: 300;
+    font-size: 2em
+}
+
+.ContentBox .Content p {
+    font-size: 1.25em;
+    font-weight: 300;
+    padding: 12px 2px
+}
+
+.Click {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #fff;
+    background-color: #0e63e2;
+    box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .3)
+}
+
+.Click:hover {
+    color: #fff;
+    letter-spacing: .1rem;
+    opacity: .8
+}
+
+.Close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: #f3f3f3 url(nclose.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer
+}
+
+.Cross {
+    padding: 5px
+}
+
+@media (max-width:767px) {
+    .ContentBox {
+        width: 300px;
+        height: auto;
+        flex-direction: column
+    }
+    .ContentBox .imgBox {
+        height: 200px;
+        transform: translateY((-50px))
+    }
+    .ContentBox .imgBox ::before {
+        background: #fff
+    }
+    .ContentBox .Content {
+        height: auto;
+        text-align: center;
+        padding: 20px;
+        padding-top: 36px
+    }
+    .Close {
+        top: -50px;
+        right: -10px;
+        background: #fff url(nclose.png);
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-position: center
+    }
+}
+ */
+
+ .popUp{
+    /* width: 100px;
+    height: 100px;
+    background-color: red; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    /* display: block; */
+    z-index: 2
+}
+
+.ContentBox {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    /* background: rgb(221, 219, 224); */
+    background-image: linear-gradient(to right, #f87e04fe 0%, #f9c404 100%);
+
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1)
+}
+
+.ContentBox .imgBox {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.ContentBox .imgBox::before {
+    content: '';
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background: #fff;
+
+    border-radius: 50%
+}
+
+.ContentBox .imgBox img {
+    position: relative;
+    max-width: 200px;
+    z-index: 1
+}
+
+.ContentBox .Content {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.ContentBox .Content h3 {
+    color: #333;
+    line-height: 1em;
+    font-weight: 300;
+    font-size: 2em
+}
+
+.ContentBox .Content p {
+    font-size: 1.25em;
+    font-weight: 300;
+    padding: 12px 2px
+}
+
+.Click {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #fff;
+    background-color: #0e63e2;
+    box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .3)
+}
+
+.Click:hover {
+    color: #fff;
+    letter-spacing: .1rem;
+    opacity: .8
+}
+
+.Close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: #f3f3f3 url(nclose.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer
+}
+
+.Cross {
+    padding: 5px
+}
+
+@media (max-width:767px) {
+    .ContentBox {
+        width: 300px;
+        height: auto;
+        flex-direction: column
+    }
+    .ContentBox .imgBox {
+        height: 200px;
+        transform: translateY((-50px))
+    }
+    .ContentBox .imgBox ::before {
+        background: #fff
+    }
+    .ContentBox .Content {
+        height: auto;
+        text-align: center;
+        padding: 20px;
+        padding-top: 36px
+    }
+    .Close {
+        top: -50px;
+        right: -10px;
+        background: #fff url(nclose.png);
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-position: center
+    }
+}
+
+
+
+/* .................... About Styling ................... */
+
+.about .heading1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 3.2rem;
+}
+.about .aboutContent{
+    height: 80%;
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+.aboutContent .leftContent{
+    height: 100%;
+    padding: 1rem;
+    width: 45%;
+}
+.aboutContent .rightContent{
+    height:  100%;
+    padding: 1rem;
+    width: 45%;
+}
+
+.aboutContent .leftContent p,
+.aboutContent .rightContent p{
+    font-size: 2rem;
+    font-weight: 200;
+    text-align:center;
+}
+
+.rightContent .btn1{
+    padding: 1rem;
+    margin-top: 3rem;
+    margin-left: 40%;
+    letter-spacing: 1px;
+    width: 150px;
+
+}
+.rightContent .btn1 a{
+    font-size: 1.6rem;
+}
+
+.btn1:hover a{
+    color: white;
+}
+
+.about .companyReviews{
+    height: 450px;
+    margin-top: 10rem;
+}
+
+.about .reviewImage{
+    width: 39%;
+    height: 100%;
+    float: left;
+}
+
+.about .reviewImage img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: fill;
+}
+.about .reviewContent{
+    width: 59%;
+    height: 100%;
+    float: right;
+}
+.companyReviews::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.reviewContent .leftReview{
+    width: 49%;
+    height: 100%;
+    float: left;
+}
+.reviewContent .rightReview{
+    width: 49%;
+    height: 100%;
+    float: right;
+}
+
+.reviewContent::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.leftReview .leftReviewContentUp{
+    width: 100%;
+    height: 50%;
+}
+
+.leftReview .leftReviewContentDown{
+    width: 100%;
+    height: 50%;
+}
+
+
+.leftReview .leftReviewContentUp .reviewIcon{
+    width: 20%;
+    height: 100%;
+    float: left;
+    padding-top: 2rem;
+}
+
+.leftReview .leftReviewContentDown .reviewIcon{
+    width: 20%;
+    height: 100%;
+    float: left;
+    padding-top: 2rem;
+
+
+}
+
+/* ........rightReview ............. */
+.rightReview .rightReviewContentUp{
+    width: 100%;
+    height: 50%;
+}
+
+.rightReview .rightReviewContentDown{
+    width: 100%;
+    height: 50%;
+}
+
+
+.rightReview .rightReviewContentUp .reviewIcon{
+    width: 20%;
+    height: 100%;
+    float: left;
+    padding-top: 2rem;
+
+}
+
+.rightReview .rightReviewContentDown .reviewIcon{
+    width: 20%;
+    height: 100%;
+    float: left;
+    padding-top: 2rem;
+
+}
+
+.reviewIcon{
+    padding: 1rem;
+    text-align: center;
+}
+.reviewIcon i{
+    font-size: 4rem;
+}
+
+.rightReviewContentDown::after,
+.rightReviewContentUp::after,
+.leftReviewContentUp::after,
+.leftReviewContentDown::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* ............review content box ......... */
+.reviewContentBox{
+    width: 79%;
+    float: right;
+    height: 100%;
+    padding: 1rem;
+}
+
+.reviewContentBox .heading1{
+    text-align: left;
+}
+.reviewContentBox p{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.reviewContentBox p span{
+    font-weight: 600;
+}
+/*  ...................... Services Styling ........................ */
+
+.services .serviceHeading{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+.serviceHeading .heading1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 3.2rem;
+
+}
+.serviceHeading p{
+    font-size: 1.5rem;
+}
+
+.services .servicesContainer{
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.servicesContainer .serviceBox{
+    height: 450px;
+    flex-basis: 23%;
+    padding: 2rem;
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+
+
+    display: block;
+  position: relative;
+  background-color: #f2f8f9;
+  border-radius: 4px;
+  padding: 32px 24px;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+  }
+
+  &:hover:before {
+    transform: scale(25);
+  }
+
+
+}
+
+
+.serviceBox:hover{
+    background-color: black;
+    color: white;
+}
+
+/* .......servicesBox styling........... */
+.serviceBox .heading3{
+    text-align: center;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.serviceBox .serviceImage{
+    width: 100%;
+    height: 30%;
+    margin: 1rem 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.serviceBox .serviceImage img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.serviceBox:hover .serviceImage img{
+    border: 2px solid white;
+}
+.serviceBox p{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+/*  ................. Internship Styling ....................... */
+.internship{
+    margin-top: 8rem;
+    padding: 8rem 0;
+
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+
+}
+.internship .internshipHeading{
+    margin-top: 2rem;
+    text-align: center;   
+    margin-bottom: 4rem;
+}
+.internship .internshipHeading .heading1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 3.2rem;
+   
+}
+
+.internshipHeading p{
+    font-size: 1.5rem;   
+}
+.internship .internshipContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    padding-bottom: 4rem;
+    
+
+
+    justify-content: space-between;   
+}
+
+.internshipContainer .internshipBox{
+    height: 450px;
+    flex-basis: 23%;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    background-color: white;
+
+
+    display: block;
+  position: relative;
+  width: 100%;
+  background-color: #f2f8f9;
+  border-radius: 4px;
+  padding: 32px 24px;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+  }
+
+  &:hover:before {
+    transform: scale(25);
+  }
+
+    
+}
+
+.internshipBox .heading3{
+    text-align: left;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+.internshipBox p{
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem 0;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+
+.internshipBox i{
+    font-size: 3rem;
+    padding: 1.5rem;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+}
+
+.internshipBox:hover i,
+.internshipBox:hover .btn1{
+    background-color: white;
+    color: black;
+    margin-top: 1rem;
+}
+.internshipBox:hover .btn1 a{
+    color: black;
+}
+.internshipBox:hover{
+    color: white;
+    background: black;
+}
+.internshipBox .internshipButton{
+    text-align: center;
+}
+.internshipBox .btn1{
+    padding: 1rem 2rem 1rem 2rem;
+    width: 100px;
+
+    background-color: black;
+    margin: 0 30%;
+}
+.internshipBox .btn1 a{
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+/* animations for internship backgroun */
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+
+* {
+  transition: all 0.3s ease-out;
+}
+
+.go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background-color: rgb(255, 0, 55);
+  border-radius: 0 4px 0 32px;
+}
+
+.go-arrow {
+  margin-top: -4px;
+  margin-right: -4px;
+  color: white;
+  font-family: courier, sans;
+}
+
+.card1 {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #f2f8f9;
+  border-radius: 4px;
+  padding: 32px 24px;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: orangered;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+  }
+
+  &:hover:before {
+    transform: scale(21);
+  }
+}
+
+.card1:hover {
+  p {
+    transition: all 0.3s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  h3 {
+    transition: all 0.3s ease-out;
+    color: #ffffff;
+  }
+}
+
+
+
+
+/* ................. Features Styling .................. */
+
+.features{
+    margin-top: 8rem;
+    padding-bottom: 2rem;
+    padding: 8rem 0;
+
+}
+
+.features .featuresHeadingContainer{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+
+}
+
+.features .featuresHeadingContainer .heading1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 3.2rem;
+
+}
+
+.features .featuresHeadingContainer p{
+    font-size: 1.5rem;   
+}
+
+.features .featuresContainer{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.features .featuresContainer .featureBox{
+ padding: 1rem;
+ background-color: gainsboro;
+}
+
+.featuresContainer .featureBox i{
+    font-size: 4rem;
+}
+.featuresContainer .featureBox .heading3{
+    width: 80%;
+    float: right;
+    margin-top: 0.5rem;
+}
+
+/* ............ Testimonial Styling ................ */
+
+.testimonial{
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    padding: 8rem 0;
+    height: 80vh;
+    display: none;
+
+}
+
+.testimonial .testimonialHeading{
+    margin-top: 2rem;
+    text-align: center;
+    border: 2px solid red;
+}
+
+.testimonial .testimonialHeading .heading1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 3.2rem;
+}
+.testimonialHeading p{
+    font-size: 1.5rem;
+}
+.scrollWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.scrollWrap .testimonialContainer{
+    height: 400px;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.scrollWrap img{
+    width: 50px;
+    height: 50px;
+    margin: 40px;
+    cursor: pointer;
+}
+.scrollWrap .rightButton{
+    transform: rotate(180deg);
+    position: absolute;
+    right: 0;
+}
+.scrollWrap .leftButton{
+    position: absolute;
+    left: 0;
+}
+
+.scrollWrap .testimonialContainer .scrollsection{
+    height: 100%;
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    justify-content: space-between;
+}
+
+.scrollsection::-webkit-scrollbar{
+    display: none;
+}
+.scrollsection .scrollBox{
+    height: 100%;
+    display: flex;
+    width: 100%;
+}
+
+.testimonialContainer .scrollsection .scrollBox .testimonialBox{
+    height: 100%;
+    padding: 2rem;
+    min-width:  612px;
+    position: relative;
+    margin: 2rem 2rem;
+    width: 100%;
+}
+
+.textBox{
+    width: 90%;
+    height: 100%;
+    float: right;
+    padding: 3rem 6rem 3rem 6rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.textBox .textAbout .heading3{
+    font-weight: 500;
+}
+
+.textBox .textAbout p{
+    font-size: 1.5rem;
+}
+
+.textBox .textMessage{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+.textMessage p span{
+    font-size: 3rem;
+}
+.textMessage p .fa-quote-left{
+    margin: 0 2rem 0 0;
+}
+.textMessage p .fa-quote-right{
+    margin: 2rem 0 0 2rem;
+}
+
+/* image box  */
+.testimonialBox .imageBox{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top:3%;
+    left: 0%;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+.testimonialBox .imageBox img{
+    width: 100%;
+    height: 100%;
+}
+
+/* ............... TEstimonial from Codingpreds.............. */
+
+section {
+    padding: 60px 0;
+    overflow: hidden
+}
+
+.section-bg {
+    background-color: #f7fbfe
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 30px
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    color: #222
+}
+
+.section-title h2::before,
+.section-title h2::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: #00563B;
+    display: inline-block
+}
+
+.section-title h2::before {
+    margin: 0 15px 10px 0
+}
+
+.section-title h2::after {
+    margin: 0 0 10px 15px
+}
+
+.section-title p {
+    margin: 15px 0 0 0
+}
+
+
+/* .................. */
+.testimonials .testimonial-wrap {
+    padding-left: 50px;
+    /* border: 2px solid red; */
+    
+}
+
+.testimonials .testimonials-carousel,
+.testimonials .testimonials-slider {
+    overflow: hidden
+}
+
+.testimonials .testimonial-item {
+    box-sizing: content-box;
+    padding: 30px 30px 30px 60px;
+    margin: 30px 15px;
+    min-height: 200px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, .08);
+    position: relative;
+    background: #fff
+}
+
+.testimonials .testimonial-item .testimonial-img {
+    width: 90px;
+    border-radius: 10px;
+    border: 6px solid #fff;
+    position: absolute;
+    left: -45px
+}
+
+.testimonials .testimonial-item h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0 5px 0;
+    color: #111
+}
+
+.testimonials .testimonial-item h4 {
+    font-size: 14px;
+    color: #999;
+    margin: 0
+}
+
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
+    color: #7c8082;
+    font-size: 26px
+}
+
+.testimonials .testimonial-item .quote-icon-left {
+    display: inline-block;
+    left: -5px;
+    position: relative
+}
+
+.testimonials .testimonial-item .quote-icon-right {
+    display: inline-block;
+    right: -5px;
+    position: relative;
+    top: 10px
+}
+
+.testimonials .testimonial-item p {
+    font-style: italic;
+    margin: 15px auto 15px auto
+}
+
+.testimonials .swiper-pagination {
+    margin-top: 20px;
+    position: relative
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    opacity: 1;
+    border: 1px solid #777
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #777
+}
+
+@media (max-width:767px) {
+    .testimonials .testimonial-wrap {
+        padding-left: 0
+    }
+    .testimonials .testimonials-carousel,
+    .testimonials .testimonials-slider {
+        overflow: hidden
+    }
+    .testimonials .testimonial-item {
+        padding: 30px;
+        margin: 15px
+    }
+    .testimonials .testimonial-item .testimonial-img {
+        position: static;
+        left: auto
+    }
+}
+
+
+
+/* ............... Team Styling ........................... */
+
+.team{
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    padding: 8rem 0;
+
+
+}
+
+.team .teamHeading{
+    margin-top: 2rem;
+    text-align: center;
+}
+.team .teamHeading .heading1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 3.2rem;
+}
+
+.team .teamHeading p{
+    font-size: 1.5rem;
+}
+
+.team .teamMemberContainer .teamMembers .memberPicture{
+    height: 320px;
+    position: relative;
+}
+
+.memberPicture img{
+    width:  100%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.team .teamMemberContainer .teamMembers .memberPosition{
+    height: 20%;
+    background: white;
+}
+
+
+.teamMembers .memberPicture .memberOverlay{
+    height: 15%;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: -10%;
+    display: none;
+    background: white;
+    opacity: 0.8;
+    transition: all;
+    transition-duration: 1s;
+    transition-timing-function:ease-in;
+
+    
+}
+
+/* ......... overlay hover .......... */
+.teamMembers .memberPicture:hover .memberOverlay{
+    display: block;
+    bottom: 0%;
+
+}
+
+.memberOverlay .overlayLinks{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    margin: 1rem auto;
+
+}
+
+.teamMembers .memberPicture .memberOverlay .overlayLinks a i{
+    color: black;
+    font-size: 2rem;
+}
+
+.teamMembers .memberPosition .positionInfo{
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.memberPosition .positionInfo .heading3{
+    font-weight: 500;
+}
+.memberPosition .positionInfo p{
+    font-size: 1.5rem;
+}
+
+
+
+/* ................... Contact Styling ........................ */
+
+
+
+.contact{
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    padding: 4rem 0;
+
+
+}
+
+.contact .contactHeading{
+    text-align: center;
+}
+.contact .contactHeading .heading1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 3.2rem;
+}
+
+.contact .contactBox{
+    width: 100%;
+    margin-top: 2rem;
+
+}
+
+
+.contactBox .leftdiv .contactLogoHeading{
+    width: 90%;
+}
+.contactLogoHeading img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.contactLogoHeading .heading1{
+    font-size: 5rem;
+}
+.contact .contactBox .leftdiv p{
+    font-size: 1.5rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding-right: 2rem;
+    margin-top: 1rem;
+}
+
+.contactBox .leftdiv .cognilinks{
+    margin-top: 1rem;
+}
+
+.cognilinks i{
+    color: black;
+    font-size: 2rem;
+    padding: 0.8rem;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin-right: 1rem;
+}
+
+
+
+
+.contactBox .middlediv .addressBox{
+    padding: 1rem;
+}
+.addressBox p{
+    font-size: 1.5rem;
+    width: 85%;
+    float: right;
+}
+.middlediv .emailBox{
+    padding: 1rem;
+}
+.emailBox p{
+    font-size: 1.5rem;
+    width: 85%;
+    float: right;
+    margin-top: 1rem;
+}
+
+.middlediv .phoneBox{
+    height: 10%;
+    padding: 1rem;
+}
+
+.phoneBox p{
+    font-size: 1.5rem;
+    width: 85%;
+    float: right;
+}
+
+.addressBox,
+.emailBox,
+.phoneBox i{
+    font-size: 3rem;
+    display: inline-block;
+}
+
+
+.rightdiv .contactform{
+    width: 95%;
+    float: right;
+}
+
+.contactform .msg{
+    left: 50%;
+    width: 100%;
+    color: red;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-top: 2em;
+    text-align: center;
+
+}
+
+.contactform input, .contactform textarea{
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    margin: 1rem 0 1rem 0;
+    font-size: 1.8rem;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid grey;
+    
+}
+
+.contactform input[type="submit"]{
+    background-color:rgb(0, 119, 255);
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.contactBox::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ........... Testimonial 2 ......... */
+.container2{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dfe9f3;
+}
+.testimonial2{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+
+}
+.testimonial2 .image{
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimonial2 .slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.slide p{
+    padding: 0 160px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    counter-reset: #333;
+}
+
+.slide .quote-icon{
+    font-size: 30px;
+    counter-reset: blue;
+}
+
+.slide .details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details .name{
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+.details .job{
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+}
+
+/* ............ Footer Styling .................. */
+
+.footer{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+.footer .footerblock{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.footerblock .leftfoot{
+    flex-basis: 50%;
+    height: 100%;
+    padding: 2rem;
+}
+.leftfoot p{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.leftfoot p span{
+    font-weight: 600;
+}
+.footerblock .rightfoot{
+    height: 100%;
+    flex-basis: 50%;
+    text-align: center;
+    padding: 2rem;
+}
+
+.rightfoot .footlinkbox{
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.rightfoot .footlinkbox ul{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+
+}
+.footlinkbox ul li{
+    display: inline-block;
+}
+
+.footlinkbox ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+
+/* ................. Media Queries .................. */
+@media (max-width: 500px){
+    html{
+        font-size: 50%;
+    }
+
+    /* ............. Header .............. */
+    .header{
+        display: block;
+    }
+
+    .header .navbar .logodiv{
+        width: 80%;
+    }
+    .header .navbar .navlistdiv{
+        display: none;
+    }
+
+    .header .navbar .menuLines{
+        font-size: 2rem;
+        width: 20%;
+        text-align: right;
+    }
+    .navbar .menuLines i{
+        margin: 1rem 2rem;
+        display: block;
+        font-size: 3rem;
+    }
+
+    /* ........... Main Media .................... */
+    .mainContent{
+        height: auto;
+    }
+    .mainContent .mainImage1{
+        float: none;
+        width: 100%;
+        padding-top: 100px;
+        /* border: 2px solid red; */
+
+    }
+    .mainContent .ContentText{
+        float: none;
+        width: 100%;
+        /* border: 2px solid green; */
+        margin-top: 0;
+    }
+
+
+    .mainContent .mainImage2{
+        display: none;
+    }
+    
+    /* ................ About Media .................... */
+
+    .about .aboutContent{
+        display: block;
+    }
+
+    .aboutContent .leftContent{
+        width: 100%;
+        height: auto;
+    }
+    .aboutContent .rightContent{
+        width: 100%;
+    }
+
+
+    /* Company review........................ */
+
+    .companyReviews .reviewImage{
+        float: none;
+        width: 100%;
+    }
+
+    .companyReviews .reviewContent{
+        float: none;
+        width: 100%;
+    }
+
+    .reviewContent .leftReview,
+    .reviewContent .rightReview{
+        float: none;
+        width: 100%;
+    }
+
+    /*  ................ Services Media ....................... */
+
+    .servicesContainer{
+        width: 100%;
+        flex-direction: column;
+    }
+    .servicesContainer .serviceBox{
+        flex-basis: 80%;
+        margin: 2rem auto;
+        height: 450px;
+
+    }
+
+    /* ........... INternship Media .............. */
+    .internshipContainer{
+        flex-direction: column;
+        width: 80%;
+    }
+    .internshipContainer .internshipBox{
+        flex-basis: 80%;
+        margin: 2rem auto;
+        height: 450px;
+
+        text-align: center;
+
+    }
+
+    /* ..................... Feature Media ..................
+     */
+
+    .featuresContainer{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+    }
+
+    .featuresContainer .featureBox{
+        flex-basis: 80%;
+        margin: 1rem auto;
+
+        text-align: center;
+    }
+
+    /* .......... Team Media ................... */
+    .team .teamBlock{
+        margin-top: 2rem;
+    }
+    
+    
+    .teamBlock::after{
+        display: block;
+        content: "";
+        clear: both;
+    }
+    .team .teamBlock .teamMemberContainer{
+        margin-top: 2rem;
+    }
+    
+    .team .teamBlock .teamMemberContainer .teamMembers{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 5px;
+    }
+    
+    .teamMemberContainer .member1{
+        margin-bottom: 2rem;
+    } 
+    
+    .teamMemberContainer::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
+    /* ............... Contact Media.................... */
+
+    .contactBox{
+        height: auto;
+    }
+    .contact .contactBox .leftdiv{
+    
+        width: 100%;
+        margin: 2rem 0;
+    }
+    
+    .contact .contactBox .middlediv{
+    
+        width: 100%;
+        
+        padding-top: 2rem;
+    }
+    .contact .contactBox .rightdiv{
+    
+        width: 100%;
+        padding-top: 2rem;
+    }
+
+    /* ........... footer media .............. */
+
+    .footerblock{
+        width: 100%;
+        flex-direction: column;
+    }
+    .leftfoot{
+        flex-basis: 100%;
+    }
+    .rightfoot{
+        flex-basis: 100%;
+    }
+}
+
+
+@media (min-width:501px) and (max-width: 767px){
+    html{
+        font-size: 50%;
+    }
+
+/* ............. Header .............. */
+    .header{
+        display: block;
+    }
+
+    .header .navbar .logodiv{
+        width: 80%;
+    }
+    .header .navbar .navlistdiv{
+        display: none;
+    }
+
+    .header .navbar .menuLines{
+        font-size: 2rem;
+        width: 20%;
+        text-align: right;
+    }
+    .navbar .menuLines i{
+        margin: 1rem 2rem;
+        display: block;
+        font-size: 3rem;
+    }
+
+
+    /* ........... Main Media .................... */
+
+    .mainContent{
+        height: auto;
+    }
+    .mainContent .mainImage1{
+        float: none;
+        width: 100%;
+        padding-top: 15px;
+
+    }
+    .mainContent .ContentText{
+        float: none;
+        width: 100%;
+    }
+
+    .mainContent .mainImage2{
+        display: none;
+    }
+
+
+    /* ................ About Media .................... */
+
+    .about .aboutContent{
+        display: block;
+    }
+
+    .aboutContent .leftContent{
+        width: 100%;
+        height: auto;
+    }
+    .aboutContent .rightContent{
+        width: 100%;
+    }
+
+    /* Company review........................ */
+
+    .companyReviews .reviewImage{
+        float: none;
+        width: 100%;
+    }
+
+    .companyReviews .reviewContent{
+        float: none;
+        width: 100%;
+    }
+
+    .reviewContent .leftReview,
+    .reviewContent .rightReview{
+        float: none;
+        width: 100%;
+    }
+
+
+    /*  ................ Services Media ....................... */
+
+    .servicesContainer{
+        width: 100%;
+        flex-direction: column;
+    }
+    .servicesContainer .serviceBox{
+        flex-basis: 40%;
+        margin: 2rem auto;
+        height: 450px;
+
+    }
+
+    /* ........... INternship Media .............. */
+    .internshipContainer{
+        width: 100%;
+    }
+    .internshipContainer .internshipBox{
+        flex-basis: 40%;
+        margin: 2rem auto;
+        height: 450px;
+
+        text-align: center;
+
+    }
+
+    /* ..................... Feature Media ..................
+     */
+
+    .featuresContainer{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+    }
+
+    .featuresContainer .featureBox{
+        flex-basis: 40%;
+        margin: 1rem auto;
+
+        text-align: center;
+    }
+
+    /* .......... Team Media ................... */
+    
+    
+    .team .teamBlock .teamMemberContainer{
+        margin-top: 2rem;
+        padding-bottom: 4rem;
+       
+    }
+    
+    .team .teamBlock .teamMemberContainer .teamMembers{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 5px;
+        width: 45%;
+        margin: 1rem 1rem;
+    
+    }
+    
+    .teamMemberContainer .member1{
+        float: left;
+    }
+    .teamMemberContainer .member2{
+        float: right;
+    }
+    
+    .teamMemberContainer::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
+
+    /* ............... Contact Media.................... */
+
+    .contactBox{
+        height: auto;
+    }
+    .contact .contactBox .leftdiv{
+    
+        width: 100%;
+        margin: 2rem 0;
+    }
+    
+    .contact .contactBox .middlediv{
+    
+        width: 100%;
+        padding-top: 2rem;
+    }
+    .contact .contactBox .rightdiv{
+    
+        width: 100%;
+        padding-top: 2rem;
+    }
+
+    /* ........... footer media .............. */
+
+    .footerblock{
+        width: 100%;
+    }
+    .leftfoot{
+        flex-basis: 50%;
+    }
+    .rightfoot{
+        flex-basis: 50%;
+    }
+}
+
+@media (min-width:768px) and (max-width: 1024px){
+    html{
+        font-size: 50%;
+    }
+
+    
+    /* ............. Header ............... */
+    .header{
+        display: block;
+    }
+
+    .header .navbar .logodiv{
+        width: 40%;
+    }
+    .header .navbar .navlistdiv{
+        display: none;
+    }
+
+    .header .navbar .menuLines{
+        font-size: 2rem;
+        width: 20%;
+        text-align: right;
+    }
+    .navbar .menuLines i{
+        margin: 1rem 2rem;
+        display: block;
+        font-size: 3rem;
+    }
+
+    /* ........... Main Media .................... */
+
+    .main .mainContent{
+        margin-top: 30rem;
+        
+    }
+
+    .mainContent .ContentText{
+        width: 49%;
+        
+    }
+    .mainContent .ContentImage{
+        width: 49%;
+        height: 100%;
+        display: block;
+    }
+    .mainContent .mainImage1{
+        display: none;
+        margin: 4rem auto;
+        height: 400px;
+    }
+
+    /* ................ About Media .................... */
+
+    .about .aboutContent{
+        display: block;
+    }
+
+    .aboutContent .leftContent{
+        width: 100%;
+        height: auto;
+    }
+    .aboutContent .rightContent{
+        width: 100%;
+    }
+
+    /* Company review........................ */
+
+    .companyReviews .reviewImage{
+        float: none;
+        width: 100%;
+    }
+
+    .companyReviews .reviewContent{
+        float: none;
+        width: 100%;
+    }
+
+
+
+    /*  ................ Services Media ....................... */
+
+    .servicesContainer{
+        width: 100%;
+        flex-direction: column;
+    }
+    .servicesContainer .serviceBox{
+        flex-basis: 40%;
+        margin: 2rem auto;
+        height: 450px;
+    }
+
+    /* ........... INternship Media .............. */
+    .internshipContainer{
+        width: 100%;
+    }
+    .internshipContainer .internshipBox{
+        flex-basis: 40%;
+        margin: 2rem auto;
+        height: 450px;
+
+        text-align: center;
+
+    }
+
+    /* ..................... Feature Media ..................
+     */
+
+    .featuresContainer{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+    }
+
+    .featuresContainer .featureBox{
+        flex-basis: 40%;
+        margin: 1rem auto;
+
+        text-align: center;
+    }
+
+    /* .......... Team Media ................... */
+     
+    
+    .team .teamBlock .teamMemberContainer{
+        margin-top: 2rem;
+        padding-bottom: 4rem;
+       
+    }
+    
+    .team .teamBlock .teamMemberContainer .teamMembers{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 5px;
+        width: 45%;
+        margin: 1rem 1rem;
+    
+    }
+    
+    .teamMemberContainer .member1{
+        float: left;
+    }
+    .teamMemberContainer .member2{
+        float: right;
+    }
+    
+    .teamMemberContainer::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
+
+    /* ............... Contact Media.................... */
+
+    .contactBox{
+        height: auto;
+    }
+    .contact .contactBox .leftdiv{    
+        width: 49%;
+        float: left;
+        margin: 2rem 0;
+    }
+    
+    .contact .contactBox .middlediv{    
+        width: 49%;
+        float: right;
+        padding-top: 2rem;
+    }
+        .contact .contactBox .rightdiv{
+        width: 100%;
+        margin-top: 4rem;
+    }
+
+    /* ........... footer media .............. */
+
+    .footerblock{
+        width: 100%;
+    }
+    .leftfoot{
+        flex-basis: 50%;
+    }
+    .rightfoot{
+        flex-basis: 50%;
+    }
+}
+
+/* Width 1024 or more .............. */
+@media (min-width : 1025px){
+    /* .......... Header ................ */
+    .header{
+        display: block;
+    }
+
+    .header .navbar .logodiv{
+        width: 30%;
+    }
+    .header .navbar .navlistdiv{
+        display: block;
+        width: 50%;
+    }
+
+    .header .navbar .menuLines{
+        font-size: 2rem;
+        display: none;
+        width: 20%;
+        text-align: right;
+    }
+    .navbar .menuLines i{
+        margin: 1rem 2rem;
+        display: block;
+        font-size: 3rem;
+    }
+
+    /* ............. main Media ............... */
+    .mainContent{
+        height: auto;
+        padding-top: 8rem;
+    }
+    .mainContent .mainImage1{
+        float: none;
+        width: 49%;
+        display: none;
+
+    }
+    .mainContent .ContentText{
+        width: 49%;
+    }
+
+    .mainContent .mainImage2{
+        width: 49%;
+    }
+
+    /* ........... About.......... */
+
+    .about{
+        padding-top: 15rem;
+    }
+
+    /* ............ Services ........... */
+
+    .services{
+        padding-top: 15rem;
+    }
+
+
+    /* .internship ............. */
+    .internship{
+        padding-top: 15rem;
+    }
+    .internshipBox{
+        margin: 1rem auto;
+    }
+    
+    /* ..................... Feature Media ..................
+     */
+
+     .features{
+        padding-top: 15rem;
+     }
+
+     .featuresContainer{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+    }
+
+    .featuresContainer .featureBox{
+        flex-basis: 40%;
+        margin: 1rem auto;
+
+        text-align: center;
+    }
+
+    /* ......... testimonial.......... */
+    .testimonial{
+        padding-top: 15rem;
+    }
+
+    
+        /*.......... TEam sections........  */
+    .team{
+        padding-top: 15rem;
+    }
+    .team .teamBlock .teamMemberContainer{
+        margin-top: 2rem;
+        padding-bottom: 4rem;
+       
+    }
+    .teamBlock .teamContainer1{
+        width: 49%;
+        float: left;
+    }
+    .teamBlock .teamContainer2{
+        width: 49%;
+        float: right;
+    }
+
+    .teamBlock::after{
+        content : "";
+        display: block;
+        clear: both;
+    }
+    
+    .team .teamBlock .teamMemberContainer .teamMembers{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 5px;
+        width: 45%;
+        margin: 1rem 1rem;
+    
+    }
+    
+    .teamMemberContainer .member1{
+        float: left;
+    }
+    .teamMemberContainer .member2{
+        float: right;
+    }
+    
+    .teamMemberContainer::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
+
+    /* ............... Contact Media.................... */
+    .contactBox{
+        height: auto;
+    }
+    .contact .contactBox .leftdiv{
+    
+        width: 30%;
+        float: left;
+        margin: 2rem 0;
+    }
+    
+    .contact .contactBox .middlediv{
+    
+        width: 25%;
+        float: left;
+        
+        padding-top: 2rem;
+    }
+        .contact .contactBox .rightdiv{
+
+        width: 45%;
+        float: right;
+        flex-basis: 45%;
+        padding-top: 2rem;
+    }
+
+    
+}
